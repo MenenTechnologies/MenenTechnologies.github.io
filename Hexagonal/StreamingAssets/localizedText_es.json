@@ -1,0 +1,20 @@
+{
+  "items": [
+    {
+      "key": "Play",
+      "value": "Jugar"
+    },
+    {
+      "key": "Rules",
+      "value": "Reglas"
+    },
+    {
+      "key": "Something",
+      "value": "Algo"
+    },
+    {
+      "key": "Exit",
+      "value": "Salir"
+    }
+  ]
+}

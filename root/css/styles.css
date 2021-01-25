@@ -76,10 +76,13 @@ p, body {
 }
 
 .button {
+    display: inline-flex;
+    align-items: center;
     border: 1px solid #007bff;
     padding: 8px 34px;
     text-decoration: none;
     margin-right: 20px;
+    margin-bottom: 20px;
 }
 
 .button-filled {
@@ -112,15 +115,7 @@ p, body {
         margin-left: 10%;
         margin-right: 10%;
     }
-
-    .button-filled {
-        display: inline-block;
-        margin-bottom: 20px;
-    }
-
-    .button-outlined {
-        display: inline-block;
-    }
+    
 }
 
 @media only screen and (max-width: 500px) {

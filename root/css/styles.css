@@ -111,6 +111,10 @@ p, body {
 
 @media only screen and (max-width: 800px) {
 
+    .main {
+        padding: 120px 0;
+    }
+
     .info {
         margin-left: 10%;
         margin-right: 10%;
@@ -120,6 +124,10 @@ p, body {
 
 @media only screen and (max-width: 500px) {
 
+    .main {
+        padding: 70px 0;
+    }
+    
     .info {
         margin-left: 5%;
         margin-right: 5%;

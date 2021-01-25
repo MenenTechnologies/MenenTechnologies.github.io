@@ -1,0 +1,9 @@
+
+-Update Curriculum
+-Add image of myself on the right of the home page (without background)
+-Localization to Spanish and maybe other languages (Japanese and Arabic to learn what changes need to be made)
+
+
+Fix:
+-highlighted active header is incorrect
+-header responsiveness

@@ -1,0 +1,130 @@
+/* Basic */
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Roboto Slab', serif;
+}
+  
+p, body {
+    font-family: 'Raleway', sans-serif;
+    background-color: rgb(224, 224, 255);
+}
+
+
+/* Headers */
+
+.navbar {
+    overflow: hidden;
+}
+
+.float-right {
+    float: right;
+    display: flex;
+    flex-direction: row;
+}
+
+.headers {
+    display: flex;
+    flex-direction: row;
+    padding-right: 40px;
+}
+
+.navbar a {
+    float: left;
+    color: black;
+    text-align: center;
+    padding: 12px;
+    text-decoration: none;
+    font-size: 18px;
+    line-height: 25px;
+    border-radius: 4px;
+}
+
+.navbar a:hover {
+    background-color: #b4c4fc;
+    color: black;
+}
+
+.navbar a.active {
+    background-color: #688af7;
+    color: white;
+}
+
+.icons {
+    display: flex;
+    flex-direction: row;
+}
+
+.icon {
+    height: 25px;
+    width: 25px;
+}
+
+/* Intro */
+
+.main {
+    width: 100%;
+    padding: 170px 0;
+}
+
+.info {
+    margin-left: 20%;
+    margin-right: 20%;
+}
+
+.buttons {
+    padding: 20px 0px;
+}
+
+.button-filled {
+    background-color: #007bff;
+    text-decoration: none;
+    color: white;
+    padding: 8px 34px;
+    margin-right: 20px;
+}
+
+.button-outlined {
+    text-decoration: none;
+    border: 1px solid #007bff;
+    padding: 8px 34px;
+}
+
+.rounded {
+    border-radius: 10px !important;
+}
+
+.icon-download {
+    height: 25px;
+    width: 25px;
+    vertical-align: middle;
+    margin-left: 5px;
+}
+
+
+/* other devices */
+
+@media only screen and (max-width: 800px) {
+
+    .info {
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+
+    .button-filled {
+        display: inline-block;
+        margin-bottom: 20px;
+    }
+
+    .button-outlined {
+        display: inline-block;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+
+    .info {
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+
+}

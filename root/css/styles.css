@@ -16,6 +16,13 @@ p, body {
     overflow: hidden;
 }
 
+.navbar-container {
+    width: 700px;
+    margin-right: auto;
+    margin-left: auto;
+    overflow: hidden; /* without this, the div has no height */
+}
+
 .float-right {
     float: right;
     display: flex;

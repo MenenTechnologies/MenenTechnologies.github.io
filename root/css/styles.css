@@ -100,6 +100,7 @@ p, body {
     width: 17px;
     vertical-align: middle;
     margin-left: 5px;
+    filter: invert(99%) sepia(4%) saturate(2%) hue-rotate(251deg) brightness(115%) contrast(100%); /* changing color from black to white */
 }
 
 

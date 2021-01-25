@@ -8,4 +8,3 @@
 Fix:
 -highlighted active header is incorrect
 -header responsiveness
--download icon should be blue

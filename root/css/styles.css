@@ -175,6 +175,14 @@ p, body {
         flex-direction: column;
     }
 
+    .info {
+        order: 2;
+    }
+    
+    .professional-picture {
+        order: 1;
+    }
+    
 }
 
 @media only screen and (max-width: 480px) {

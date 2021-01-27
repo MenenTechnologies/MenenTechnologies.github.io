@@ -69,13 +69,18 @@ p, body {
 /* Intro */
 
 .main {
+    display: flex;
+    align-items: center;
     width: 100%;
-    padding: 170px 0;
+    padding-top: 170px;
 }
 
 .info {
-    margin-left: 20%;
-    margin-right: 20%;
+    display: inline-block;
+    margin-left: 10%;
+    margin-right: 5%;
+    margin-top: auto;
+    margin-bottom: auto;
 }
 
 .buttons {
@@ -113,6 +118,17 @@ p, body {
     filter: invert(99%) sepia(4%) saturate(2%) hue-rotate(251deg) brightness(115%) contrast(100%); /* changing color from black to white */
 }
 
+.professional-picture {
+    display: inline-block;
+    margin-right: 10%;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.professional-picture img {
+    width: 350px;
+    height: auto;
+}
 
 /* other devices */
 

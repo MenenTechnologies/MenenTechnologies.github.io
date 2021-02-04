@@ -17,48 +17,36 @@ p, body {
 }
 
 .navbar-container {
-    width: 700px;
-    margin-right: auto;
-    margin-left: auto;
+    margin-left: 10%;
     overflow: hidden; /* without this, the div has no height */
-}
-
-.float-right {
-    float: right;
     display: flex;
     flex-direction: row;
 }
 
 .headers {
-    display: flex;
-    flex-direction: row;
-    padding-right: 40px;
+    display: inline-block;
+    margin-top: auto;
+    margin-bottom: auto;
+    padding-right: 2%;
 }
 
-.navbar a {
+.navbar-container a {
     float: left;
     color: black;
-    text-align: center;
-    padding: 12px;
+    margin: 12px 24px 12px 0px;
     text-decoration: none;
-    font-size: 18px;
-    line-height: 25px;
-    border-radius: 4px;
 }
 
 .navbar a:hover {
-    background-color: #b4c4fc;
-    color: black;
+    color: #007bff;
 }
 
 .navbar a.active {
-    background-color: #688af7;
-    color: white;
+    color: #002fff;
 }
 
 .icons {
-    display: flex;
-    flex-direction: row;
+    display: inline-block;
 }
 
 .icon {
@@ -170,6 +158,15 @@ p, body {
 }
 
 @media only screen and (max-width: 600px) {
+
+    .navbar-container {
+        flex-direction: column;
+        margin-left: 5%;
+    }
+
+    .navbar-container a {
+        margin-right: 12px;
+    }
 
     .main {
         flex-direction: column;

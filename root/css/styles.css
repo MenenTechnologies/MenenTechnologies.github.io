@@ -3,10 +3,16 @@
 h1, h2, h3, h4, h5, h6 {
     font-family: 'Roboto Slab', serif;
 }
-  
-p, body {
+
+html
+{
+    height: 100%;
+}
+
+body {
     font-family: 'Raleway', sans-serif;
     background-color: rgb(224, 224, 255);
+    height: 100%;
 }
 
 
@@ -17,23 +23,19 @@ p, body {
 }
 
 .navbar-container {
-    margin-left: 10%;
     overflow: hidden; /* without this, the div has no height */
-    display: flex;
-    flex-direction: row;
 }
 
 .headers {
     display: inline-block;
     margin-top: auto;
     margin-bottom: auto;
-    padding-right: 2%;
 }
 
 .navbar-container a {
     float: left;
     color: black;
-    margin: 12px 24px 12px 0px;
+    margin: 12px;
     text-decoration: none;
 }
 
@@ -56,19 +58,23 @@ p, body {
 
 /* Intro */
 
-.main {
+.first-div {
+    padding-top: 10%;
+}
+
+.centered-container {
     display: flex;
+    flex-direction: row;
     align-items: center;
-    width: 100%;
-    padding-top: 170px;
+    justify-content: center;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    gap: 10%;
 }
 
 .info {
     display: inline-block;
-    margin-left: 10%;
-    margin-right: 5%;
-    margin-top: auto;
-    margin-bottom: auto;
 }
 
 .buttons {
@@ -108,31 +114,20 @@ p, body {
 
 .professional-picture {
     display: inline-block;
-    margin-right: 10%;
-    margin-top: auto;
-    margin-bottom: auto;
+    max-width: 1000px; /* size of the specified image */
+    width: 30%;
+    height: auto;
+    image-rendering: -webkit-optimize-contrast;
 }
 
-.professional-picture img {
-    width: 400px;
-    height: auto;
-}
 
 /* other devices */
 
 @media only screen and (max-width: 1200px) {
 
-    .professional-picture img {
-        width: 350px;
-    }
-
 }
 
 @media only screen and (max-width: 1024px) {
-    
-    .professional-picture img {
-        width: 300px;
-    }
 
 }
 
@@ -142,33 +137,15 @@ p, body {
 
 @media only screen and (max-width: 768px) {
 
-    .main {
-        padding-top: 120px;
-    }
-
-    .info {
-        margin-left: 10%;
-        margin-right: 10%;
-    }
-
-    .professional-picture img {
-        width: 250px;
+    .professional-picture {
+        width: 180px;
     }
     
 }
 
 @media only screen and (max-width: 600px) {
 
-    .navbar-container {
-        flex-direction: column;
-        margin-left: 5%;
-    }
-
-    .navbar-container a {
-        margin-right: 12px;
-    }
-
-    .main {
+    .centered-container {
         flex-direction: column;
     }
 
@@ -183,22 +160,9 @@ p, body {
 }
 
 @media only screen and (max-width: 480px) {
-    
-    .main {
-        padding-top: 70px;
-    }
-
-    .professional-picture img {
-        width: 200px;
-    }
 
 }
 
 @media only screen and (max-width: 320px) {
-    
-    .info {
-        margin-left: 5%;
-        margin-right: 5%;
-    }
 
 }

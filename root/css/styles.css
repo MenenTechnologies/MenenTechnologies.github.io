@@ -78,17 +78,23 @@ body {
 }
 
 .buttons {
-    padding: 20px 0px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(9rem, 1fr));
+    column-gap: 5%;
+    row-gap: 15%;
+    margin-top: 2%;
+    margin-bottom: 2%;
 }
 
 .button {
-    display: inline-flex;
-    align-items: center;
     border: 1px solid #007bff;
-    padding: 8px 34px;
     text-decoration: none;
-    margin-right: 20px;
-    margin-bottom: 20px;
+    padding: 8px 18px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 }
 
 .button-filled {

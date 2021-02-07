@@ -40,7 +40,7 @@ body {
 }
 
 .navbar a:hover {
-    color: #007bff;
+    transform: scale(1.2) translateY(-3%);
 }
 
 .navbar a.active {
@@ -95,6 +95,14 @@ body {
     justify-content: center;
     align-items: center;
     text-align: center;
+    box-shadow: 2px 2px 2px #bbb;
+    -moz-box-shadow: 2px 2px 2px #bbb;
+    -webkit-box-shadow: 2px 2px 2px #bbb;
+    -khtml-box-shadow: 2px 2px 2px #bbb;
+}
+
+.button:hover {
+    transform: scale(1.02) translateY(-3%);
 }
 
 .button-filled {
@@ -125,6 +133,10 @@ body {
     height: auto;
     border-radius: 9%/6%;
     image-rendering: -webkit-optimize-contrast;
+    box-shadow: 0.5vw 0.5vw 0.5vw #bbb;
+    -moz-box-shadow: 0.5vw 0.5vw 0.5vw #bbb;
+    -webkit-box-shadow: 0.5vw 0.5vw 0.5vw #bbb;
+    -khtml-box-shadow: 0.5vw 0.5vw 0.5vw #bbb;
 }
 
 

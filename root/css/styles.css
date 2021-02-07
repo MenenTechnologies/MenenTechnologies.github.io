@@ -36,18 +36,18 @@ body {
     margin-bottom: auto;
 }
 
-.navbar-container a {
+.header {
     float: left;
     color: black;
     margin: 12px;
     text-decoration: none;
 }
 
-.navbar a:hover {
+.header:hover {
     transform: scale(1.2) translateY(-3%);
 }
 
-.navbar a.active {
+.header.active {
     color: #002fff;
 }
 

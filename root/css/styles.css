@@ -13,6 +13,8 @@ body {
     font-family: 'Raleway', sans-serif;
     background-color: rgb(224, 224, 255);
     height: 100%;
+    width: 100%;
+    margin: 0;
 }
 
 
@@ -20,6 +22,9 @@ body {
 
 .navbar {
     overflow: hidden;
+    position: absolute;
+    top: 0;
+    width: 100%;
 }
 
 .navbar-container {
@@ -59,7 +64,7 @@ body {
 /* Intro */
 
 .first-div {
-    padding-top: 10%;
+    height: 100%;
 }
 
 .centered-container {
@@ -70,7 +75,7 @@ body {
     width: 80%;
     margin-left: auto;
     margin-right: auto;
-    gap: 10%;
+    column-gap: 10%;
 }
 
 .info {
@@ -129,7 +134,7 @@ body {
 .professional-picture {
     display: inline-block;
     max-width: 1000px; /* size of the specified image */
-    width: 30%;
+    width: 40vmin;
     height: auto;
     border-radius: 9%/6%;
     image-rendering: -webkit-optimize-contrast;

@@ -52,15 +52,6 @@ body {
     color: #002fff;
 }
 
-.icons {
-    display: inline-block;
-}
-
-.icon {
-    height: 25px;
-    width: 25px;
-}
-
 /* Intro */
 
 .first-div {
@@ -81,6 +72,27 @@ body {
 
 .info {
     display: inline-block;
+}
+
+.icons {
+    display: flex;
+    flex-direction: row;
+    column-gap: 2%;
+    width: 100%;
+}
+
+.icons a {
+    display: inline-block;
+}
+
+.icons a:hover {
+    transform: scale(1.15) translateY(-3%);
+}
+
+.icon {
+    display: inline-block;
+    height: 25px;
+    width: 25px;
 }
 
 .buttons {

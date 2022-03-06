@@ -4,7 +4,7 @@
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 700px));
   grid-auto-rows: repeat(auto-fit, minmax(100px, 200px));
-  grid-gap: 2%;
+  grid-gap: 2vh;
   align-content: start;
   justify-content: center;
 }

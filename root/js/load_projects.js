@@ -17,7 +17,7 @@ $.getJSON("root/files/projects.json", function (data) {
     div_desc = "<div class='description'>" + project.description + "</div>";
     button_text = project.tags.includes("Game") ? "Play" : "See";
     button = project.link ? "<a class='button rounded play' href='" + project.link + "'>" + button_text + "</a>" : "";
-    image = "<img src='" + project.image + "'>";
+    image = project.image ? "<img src='" + project.image + "'>" : "";
     return (
       "<div class='card'>" +
       "<div class='content'>" +
@@ -28,9 +28,7 @@ $.getJSON("root/files/projects.json", function (data) {
       div_desc +
       (button ? "<div class='play_container'>" + button + "</div>" : "") +
       "</div>" +
-      "<div class='media'>" +
-      image +
-      "</div>" +
+      (image ? "<div class='media'>" + image + "</div>" : "") +
       "</div>"
     );
   }

@@ -1,6 +1,6 @@
 
+-remove buttons in home page (let people explore)
 -Update Curriculum
--remove background of image of myself in the home page
 -Add waving hand emoji next to "I'm Pablo" to its right in the home page
 -Localization to Spanish and maybe other languages (Japanese and Arabic to learn what changes need to be made) and test responsiveness again
 

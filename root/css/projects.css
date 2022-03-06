@@ -14,6 +14,7 @@
   flex-direction: row;
   width: 100%;
   padding: 3%;
+  box-sizing: border-box; /* includes padding and margin in width and height calculation for grid */
   border-radius: 10px;
   background-color: #15225c;
 }

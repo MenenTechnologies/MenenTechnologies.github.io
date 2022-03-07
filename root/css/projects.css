@@ -1,3 +1,34 @@
+.centered-container {
+  flex-direction: column; /* override */
+}
+
+/* filter */
+
+.group-filter {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 3%;
+  height: 50px;
+}
+
+.group-filter > .text {
+  margin-right: 1%;
+}
+
+.group-filter > button {
+  margin-right: 2%;
+}
+
+.ui-widget,
+.ui-multiselect-header,
+.ui-multiselect-checkboxes /* override */ {
+  font-size: 0.9rem;
+}
+
+/* cards grid*/
+
 .cards {
   width: 100%;
   height: 100%;

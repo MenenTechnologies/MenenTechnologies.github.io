@@ -1,3 +1,34 @@
+// function to call on dropdowns events to refresh grid
+function filterProjects() {
+  checkedTags = $("#filter-by-tag")
+    .multiselect("getChecked")
+    .map(function () {
+      return $(this).val();
+    })
+    .toArray();
+
+  checkedYears = $("#filter-by-year")
+    .multiselect("getChecked")
+    .map(function () {
+      return $(this).val();
+    })
+    .toArray();
+
+  $(".card").each(function (index, item) {
+    var foundTag = false,
+      foundYear = false;
+    checkedTags.forEach(function (checkedTag) {
+      if ($(item).attr("tags").includes(checkedTag)) foundTag = true;
+    });
+    checkedYears.forEach(function (checkedYear) {
+      if ($(item).attr("years").includes(checkedYear)) foundYear = true;
+    });
+    if (foundTag && foundYear) $(item).show();
+    else $(item).hide();
+  });
+}
+
+// get data and build grid
 $.getJSON("root/files/projects.json", function (data) {
   // console.log(data.projects);
   let projects = data.projects;
@@ -19,8 +50,10 @@ $.getJSON("root/files/projects.json", function (data) {
     button = project.link ? "<a class='button rounded play' href='" + project.link + "'>" + button_text + "</a>" : "";
     image = project.image ? "<img src='" + project.image + "'>" : "";
     return (
-      "<div class='card' id='" +
+      "<div class='card' tags='" +
       project.tags.join(" ") +
+      "' years='" +
+      project.year +
       "'>" +
       "<div class='content'>" +
       div_title +
@@ -57,11 +90,22 @@ $.getJSON("root/files/projects.json", function (data) {
   $("<div/>", { class: "text", html: "Tags:" }).appendTo(groupFilter);
   var dropdownTags = $("<select/>", { id: "filter-by-tag", multiple: true });
   for (var tag of tags) {
-    $("<option />", { value: tag, html: tag }).appendTo(dropdownTags);
+    $("<option />", { selected: true, value: tag, html: tag }).appendTo(dropdownTags);
   }
   dropdownTags.appendTo(groupFilter);
   $("#filter-by-tag").multiselect({
     buttonWidth: 150,
+    click: function (event, ui) {
+      // console.log(ui.value + " is " + (ui.checked ? "checked" : "unchecked"));
+      // console.log($("#filter-by-tag").val()); // issue: clicked item is not included when checking it on
+      filterProjects();
+    },
+    checkAll: function () {
+      filterProjects();
+    },
+    uncheckAll: function () {
+      filterProjects();
+    },
   });
 
   // create filter for year
@@ -70,11 +114,20 @@ $.getJSON("root/files/projects.json", function (data) {
 
   $("<div/>", { class: "text", html: "Year:" }).appendTo(groupFilter);
   var dropdownYears = $("<select/>", { id: "filter-by-year", multiple: true });
-  for (let year = 2019; year < 2022; year++) {
-    $("<option />", { value: year, html: year }).appendTo(dropdownYears);
+  for (let year = 2022; year >= 2019; year--) {
+    $("<option />", { selected: true, value: year, html: year }).appendTo(dropdownYears);
   }
   dropdownYears.appendTo(groupFilter);
   $("#filter-by-year").multiselect({
     buttonWidth: 150,
+    click: function (event, ui) {
+      filterProjects();
+    },
+    checkAll: function () {
+      filterProjects();
+    },
+    uncheckAll: function () {
+      filterProjects();
+    },
   });
 });

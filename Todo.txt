@@ -1,4 +1,9 @@
 
+-Projects:
+	add animations
+	change colors of dropdowns to match the rest of the UI
+	add more projects to json file
+
 -remove buttons in home page (let people explore)
 -Update Curriculum
 -Add waving hand emoji next to "I'm Pablo" to its right in the home page

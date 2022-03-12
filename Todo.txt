@@ -2,6 +2,7 @@
 -Include curriculum in Contact page
 -Update Curriculum
 -Localization to Spanish and maybe other languages (Japanese and Arabic to learn what changes need to be made) and test responsiveness again
+-Logo: "Menen" in Ravie font ("M" in narrow devices)
 
 
 Fix:

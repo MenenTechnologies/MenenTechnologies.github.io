@@ -14,7 +14,9 @@ function filterProjects() {
     })
     .toArray();
 
+  // check each card for filter settings and show/hide them
   $(".card").each(function (index, item) {
+    // check if tags or year match
     var foundTag = false,
       foundYear = false;
     checkedTags.forEach(function (checkedTag) {
@@ -23,8 +25,12 @@ function filterProjects() {
     checkedYears.forEach(function (checkedYear) {
       if ($(item).attr("years").includes(checkedYear)) foundYear = true;
     });
-    if (foundTag && foundYear) $(item).show();
-    else $(item).hide();
+
+    // show/hide items
+    var shouldBeVisible = foundTag && foundYear;
+    if (($(item).is(":visible") && !shouldBeVisible) || (!$(item).is(":visible") && shouldBeVisible)) {
+      $(item).slideToggle({ duration: 700 });
+    }
   });
 }
 

@@ -1,4 +1,8 @@
 
+-Projects:
+	change colors of dropdowns to match the rest of the UI
+	add more projects to json file
+
 -Include curriculum in Contact page
 -Update Curriculum
 -Localization to Spanish and maybe other languages (Japanese and Arabic to learn what changes need to be made) and test responsiveness again

@@ -35,7 +35,7 @@ function filterProjects() {
 }
 
 // get data and build grid
-$.getJSON("root/files/projects.json", function (data) {
+$.getJSON("root/data/en/projects.json", function (data) {
   // console.log(data.projects);
   let projects = data.projects;
 

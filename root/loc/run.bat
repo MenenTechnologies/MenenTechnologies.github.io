@@ -1,0 +1,1 @@
+serge localize config.nconf

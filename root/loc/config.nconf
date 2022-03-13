@@ -1,0 +1,56 @@
+# sample file: https://serge.io/docs/configuration-files/reference/
+
+inc
+{
+    common-job-settings
+    {
+        optimizations               YES
+        active                      YES
+        debug                       NO
+        debug_nosave                NO
+        output_only_mode            NO
+
+        source_language             en
+        destination_languages       es
+
+        normalize_strings           NO
+        use_keys_as_context         NO
+        leave_untranslated_blank    NO
+
+        db_source                   DBI:SQLite:dbname=./databases/translations.db3
+        db_namespace                MyWebsitePortfolio
+        
+        reuse_translations          YES
+        reuse_orphaned              YES
+        reuse_uncertain             NO
+        reuse_fuzzy                 YES
+        reuse_as_fuzzy_default      YES
+    }
+}
+
+jobs
+{
+    # job: json files 
+    {
+        @inherit                    .#inc/common-job-settings
+
+        id                          json.job
+        name                        Json parsing job
+        source_dir                  ../data/en
+        source_match                \.json$
+
+        parser
+        {
+            plugin                  parse_json
+
+            data
+            {
+                path_matches        \/(title|tags|description)$
+            }
+        }
+
+        ts_file_path                translations/%LANG%/%FILE%.po
+        output_file_path            ../data/%LANG%/%FILE%
+    }
+
+}

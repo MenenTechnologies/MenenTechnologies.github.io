@@ -1,0 +1,72 @@
+msgid ""
+msgstr ""
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: es\n"
+"Generated-By: Serge 1.4\n"
+
+#. /projects[0]/description
+#: File: projects.json
+#: ID: efd8c9c84126b86b905d2d2c2639d42a
+msgid ""
+"Game in first person in which you need to fight the minotaur and find the "
+"exit of the maze."
+msgstr ""
+
+#. /projects[0]/title
+#: File: projects.json
+#: ID: afb14c54be47ef80e7ba8c25c7b02b29
+msgid "Minotaur's Maze"
+msgstr "Laberinto del minotauro"
+
+#. /projects[1]/description
+#: File: projects.json
+#: ID: b80bd3ece02196802eade8cc962c2815
+msgid "Website that highlights my experience and personal projects."
+msgstr ""
+
+#. /projects[1]/title
+#: File: projects.json
+#: ID: b30e1f336aa8789146c91779cd0e7d03
+msgid "This Portfolio Website"
+msgstr ""
+
+#. /projects[2]/description
+#: File: projects.json
+#: ID: 94d3c1cfe845b5ef5f21a90aff08311e
+msgid ""
+"Relaxing game for the LEGO Ideas Game Jam. Grow different types of crops and "
+"harvest them to earn money."
+msgstr ""
+
+#. /projects[2]/title
+#: File: projects.json
+#: ID: 40ceb777ce50f70d8153f3810b768164
+msgid "LEGO Farm"
+msgstr ""
+
+#. /projects[3]/description
+#: File: projects.json
+#: ID: d288f489c38cbaf9e6709341abc89078
+msgid "First game I made to practice my new acquired skills in Unity."
+msgstr ""
+
+#. /projects[3]/title
+#: File: projects.json
+#: ID: b032a9f97b2fd429c7346b47c990c2af
+msgid "Asteroids"
+msgstr ""
+
+#. /projects[4]/description
+#: File: projects.json
+#: ID: be121d8e5731ee8e2d4effeb7da41486
+msgid ""
+"Game made in group with some folks from the Baltimore Indie Game Developers "
+"Group."
+msgstr ""
+
+#. /projects[4]/title
+#: File: projects.json
+#: ID: 826106862e83f313a90fbce04922d03b
+msgid "Ludum Dare 44: Loose Change"
+msgstr ""

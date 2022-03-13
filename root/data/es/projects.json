@@ -1,7 +1,7 @@
 ﻿{
    "projects" : [
       {
-         "description" : "Game in first person in which you need to fight the minotaur and find the exit of the maze.",
+         "description" : "Juego en primera persona en el que tienes que luchar contra el minotauro y encontrar la salida del laberinto.",
          "image" : "",
          "link" : "https:\/\/menendevs.com\/Maze\/Build_20200228",
          "tags" : [
@@ -13,47 +13,47 @@
          "year" : 2022
       },
       {
-         "description" : "Website that highlights my experience and personal projects.",
+         "description" : "Sitio web que destaca mi experiencia y mis proyectos personales.",
          "image" : "",
          "link" : "https:\/\/menendevs.com\/",
          "tags" : [
             "Software",
             "Web"
          ],
-         "title" : "This Portfolio Website",
+         "title" : "Este portafolio web",
          "year" : "2021-now"
       },
       {
-         "description" : "Relaxing game for the LEGO Ideas Game Jam. Grow different types of crops and harvest them to earn money.",
+         "description" : "Relajante juego para la competición de videojuegos LEGO Ideas. Haz crecer diferentes tipos de cultivos y recógelos para ganar dinero.",
          "image" : "root\/images\/projects\/LegoFarm.jpg",
          "link" : "https:\/\/ideas.lego.com\/challenges\/6811cf30-f944-4dfa-8714-9b38be6fbb52\/application\/ccc48507-85d4-403e-8fcb-a9a2ec69c19b",
          "tags" : [
             "Software",
             "Game"
          ],
-         "title" : "LEGO Farm",
+         "title" : "Granja LEGO",
          "year" : 2021
       },
       {
-         "description" : "First game I made to practice my new acquired skills in Unity.",
+         "description" : "Primer juego que hice para practicar mis nuevas habilidades adquiridas en Unity.",
          "image" : "root\/images\/projects\/Asteroids.png",
          "link" : "https:\/\/menendevs.com\/Asteroids\/Build_20210214\/",
          "tags" : [
             "Software",
             "Game"
          ],
-         "title" : "Asteroids",
+         "title" : "Asteroides",
          "year" : 2020
       },
       {
-         "description" : "Game made in group with some folks from the Baltimore Indie Game Developers Group.",
+         "description" : "Juego realizado en equipo con algunas personas del grupo de desarrolladores de videojuegos indie de Baltimore.",
          "image" : "",
          "link" : "https:\/\/ldjam.com\/events\/ludum-dare\/44\/loose-change",
          "tags" : [
             "Software",
             "Game"
          ],
-         "title" : "Ludum Dare 44: Loose Change",
+         "title" : "Ludum Dare 44: Dinero Suelto",
          "year" : 2019
       }
    ]

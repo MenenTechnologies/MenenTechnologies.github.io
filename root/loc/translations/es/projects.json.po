@@ -1,6 +1,6 @@
 msgid ""
 msgstr ""
-"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Language: es\n"
 "Generated-By: Serge 1.4\n"
@@ -11,7 +11,7 @@ msgstr ""
 msgid ""
 "Game in first person in which you need to fight the minotaur and find the "
 "exit of the maze."
-msgstr ""
+msgstr "Juego en primera persona en el que tienes que luchar contra el minotauro y encontrar la salida del laberinto."
 
 #. /projects[0]/title
 #: File: projects.json
@@ -23,13 +23,13 @@ msgstr "Laberinto del minotauro"
 #: File: projects.json
 #: ID: b80bd3ece02196802eade8cc962c2815
 msgid "Website that highlights my experience and personal projects."
-msgstr ""
+msgstr "Sitio web que destaca mi experiencia y mis proyectos personales."
 
 #. /projects[1]/title
 #: File: projects.json
 #: ID: b30e1f336aa8789146c91779cd0e7d03
 msgid "This Portfolio Website"
-msgstr ""
+msgstr "Este portafolio web"
 
 #. /projects[2]/description
 #: File: projects.json
@@ -37,25 +37,25 @@ msgstr ""
 msgid ""
 "Relaxing game for the LEGO Ideas Game Jam. Grow different types of crops and "
 "harvest them to earn money."
-msgstr ""
+msgstr "Relajante juego para la competición de videojuegos LEGO Ideas. Haz crecer diferentes tipos de cultivos y recógelos para ganar dinero."
 
 #. /projects[2]/title
 #: File: projects.json
 #: ID: 40ceb777ce50f70d8153f3810b768164
 msgid "LEGO Farm"
-msgstr ""
+msgstr "Granja LEGO"
 
 #. /projects[3]/description
 #: File: projects.json
 #: ID: d288f489c38cbaf9e6709341abc89078
 msgid "First game I made to practice my new acquired skills in Unity."
-msgstr ""
+msgstr "Primer juego que hice para practicar mis nuevas habilidades adquiridas en Unity."
 
 #. /projects[3]/title
 #: File: projects.json
 #: ID: b032a9f97b2fd429c7346b47c990c2af
 msgid "Asteroids"
-msgstr ""
+msgstr "Asteroides"
 
 #. /projects[4]/description
 #: File: projects.json
@@ -63,10 +63,11 @@ msgstr ""
 msgid ""
 "Game made in group with some folks from the Baltimore Indie Game Developers "
 "Group."
-msgstr ""
+msgstr "Juego realizado en equipo con algunas personas del grupo de desarrolladores de videojuegos indie de Baltimore."
 
 #. /projects[4]/title
 #: File: projects.json
 #: ID: 826106862e83f313a90fbce04922d03b
 msgid "Ludum Dare 44: Loose Change"
-msgstr ""
+msgstr "Ludum Dare 44: Dinero Suelto"
+

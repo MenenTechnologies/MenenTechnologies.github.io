@@ -5,5 +5,15 @@
 -Add syntax highlighter to Visual Studio Code
 	follow instructions in https://github.com/iafan/Config-Neat/tree/master/highlighters/Visual%20Studio%20Code
 	(.vscode folder is in %USERPROFILE%)
--Edit config.nconf file
--Run serge command
+-Prepare config.nconf file
+-Run serge command:
+	serge localize config.nconf
+-Integrate Serge with SmartCAT
+	in SmartCAT, create project, API key
+	install SmartCAT tool:
+		cpan Smartcat::App
+	copy SmartCAT plugin from https://github.com/evernote/serge/blob/master/lib/Serge/Sync/Plugin/TranslationService/smartcat_v2.pm to Serge installation folder lib\Serge\Sync\Plugin\TranslationService
+-Run serge commands:
+	serge push-ts config.nconf
+	serge pull-ts config.nconf
+	serge localize config.nconf

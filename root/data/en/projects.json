@@ -1,0 +1,44 @@
+{
+  "projects": [
+    {
+      "title": "Minotaur's Maze",
+      "tags": ["Software", "Game", "In development"],
+      "year": 2022,
+      "description": "Game in first person in which you need to fight the minotaur and find the exit of the maze.",
+      "link": "https://menendevs.com/Maze/Build_20200228",
+      "image": ""
+    },
+    {
+      "title": "This Portfolio Website",
+      "tags": ["Software", "Web"],
+      "year": "2021-now",
+      "description": "Website that highlights my experience and personal projects.",
+      "link": "https://menendevs.com/",
+      "image": ""
+    },
+    {
+      "title": "LEGO Farm",
+      "tags": ["Software", "Game"],
+      "year": 2021,
+      "description": "Relaxing game for the LEGO Ideas Game Jam. Grow different types of crops and harvest them to earn money.",
+      "link": "https://ideas.lego.com/challenges/6811cf30-f944-4dfa-8714-9b38be6fbb52/application/ccc48507-85d4-403e-8fcb-a9a2ec69c19b",
+      "image": "root/images/projects/LegoFarm.jpg"
+    },
+    {
+      "title": "Asteroids",
+      "tags": ["Software", "Game"],
+      "year": 2020,
+      "description": "First game I made to practice my new acquired skills in Unity.",
+      "link": "https://menendevs.com/Asteroids/Build_20210214/",
+      "image": "root/images/projects/Asteroids.png"
+    },
+    {
+      "title": "Ludum Dare 44: Loose Change",
+      "tags": ["Software", "Game"],
+      "year": 2019,
+      "description": "Game made in group with some folks from the Baltimore Indie Game Developers Group.",
+      "link": "https://ldjam.com/events/ludum-dare/44/loose-change",
+      "image": ""
+    }
+  ]
+}

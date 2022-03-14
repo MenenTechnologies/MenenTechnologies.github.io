@@ -7,5 +7,9 @@ $(document).ready(function(){
                 $(this).addClass("active");
             }
         });
+
+        $("#language-pulldown").selectmenu({
+            width: 100,
+        });
     });
 });

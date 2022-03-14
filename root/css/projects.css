@@ -1,5 +1,5 @@
-.centered-container {
-  flex-direction: column; /* override */
+.projects-container {
+  flex-direction: column;
 }
 
 /* filter */
@@ -20,12 +20,6 @@
 
 .group-filter > button {
   margin-right: 2%;
-}
-
-.ui-widget,
-.ui-multiselect-header,
-.ui-multiselect-checkboxes /* override */ {
-  font-size: 0.9rem;
 }
 
 /* cards grid*/

@@ -39,7 +39,7 @@ inc
         use_keys_as_context         NO
         leave_untranslated_blank    NO
 
-        db_source                   DBI:SQLite:dbname=./databases/translations.db3
+        db_source                   DBI:SQLite:dbname=./db/translations.db3
         db_namespace                MyWebsitePortfolio
         
         reuse_translations          YES
@@ -47,6 +47,8 @@ inc
         reuse_uncertain             NO
         reuse_fuzzy                 YES
         reuse_as_fuzzy_default      YES
+        
+        ts_file_path                ts/%LANG%/%FILE%.po # gives error if different in each job
 
         callback_plugins
         {
@@ -110,7 +112,7 @@ inc
 
 jobs
 {
-    # job: json files 
+    # job: json files in data folder
     {
         @inherit                    .#inc/common-job-settings
 
@@ -129,8 +131,32 @@ jobs
             }
         }
 
-        ts_file_path                translations/%LANG%/%FILE%.po
         output_file_path            ../data/%LANG%/%FILE%
     }
 
+    # job: html files
+    {
+        @inherit                    .#inc/common-job-settings
+
+        id                          html.job
+        name                        HTML parsing job
+        source_dir                  ../../
+        source_match                \index.html$
+        # source_exclude              (games.html|about.html)$
+        debug                       YES
+
+        parser
+        {
+            plugin                  parse_php_xhtml
+
+            data
+            {
+                email_from          nenendevs@gmail.org
+                email_to            nenendevs@gmail.org
+                email_subject       Errors found in HTML file
+            }
+        }
+
+        output_file_path            ../../%LANG%/%FILE%
+    }
 }

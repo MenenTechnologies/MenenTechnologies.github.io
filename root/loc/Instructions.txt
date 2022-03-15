@@ -17,3 +17,11 @@
 	serge push-ts config.nconf
 	serge pull-ts config.nconf
 	serge localize config.nconf
+
+
+Instructions for HTML files:
+-Make sure to close every tag
+-lang="en" has a special meaning for the PHP/XHTML parser
+	lang="en" means translate this element all together without including it in its parent
+	lang="" means this element should not be translated
+-check strings in po files before doing push-ts command to avoid machine translation of wrong string (which there is a limit each month)

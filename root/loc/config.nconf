@@ -151,6 +151,8 @@ jobs
 
             data
             {
+                include_tags        title
+
                 email_from          nenendevs@gmail.org
                 email_to            nenendevs@gmail.org
                 email_subject       Errors found in HTML file

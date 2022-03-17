@@ -1,9 +1,14 @@
 msgid ""
 msgstr ""
-"Content-Type: text/plain; charset=utf-8\n"
+"Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Language: es\n"
 "Generated-By: Serge 1.4\n"
+
+#: File: index.html
+#: ID: c4af6954b9bf213cb36e98cc6c3fb74c
+msgid "Pablo - Personal Portfolio"
+msgstr "Pablo - Portafolio personal"
 
 #: File: index.html
 #: ID: 05011c7ac35976ea5340dd1caeb4371e
@@ -18,30 +23,30 @@ msgstr "Ingeniero de software de localización y de interfaz de usuario"
 #: File: index.html
 #: ID: 0f9946852307e4a46c22145e416272cd
 msgid "Game Developer in my free time"
-msgstr "Desarrollador de juegos en mi tiempo libre"
+msgstr "Desarrollador de videojuegos en mi tiempo libre"
 
 #: File: index.html
 #: ID: 7f9fd078896f90ac72a2f60e476e41f2
 msgid "Double Master in Industrials and Microelectronics at UPM &amp; IIT"
-msgstr "Doble Máster en Industriales y Microelectrónica en la UPM &amp; IIT"
+msgstr "Doble Máster en Industriales y Microelectrónica en la UPM y el IIT"
 
 #. alt attribute
 #: File: index.html
 #: ID: 1e57c7e00c5353726a8075c4a9e0788f
 msgid "LinkedIn button link"
-msgstr "Enlace al botón de LinkedIn"
+msgstr "Botón con enlace a LinkedIn"
 
 #. alt attribute
 #: File: index.html
 #: ID: 7bf96bec0f8e552dd30a9f510f6278c3
 msgid "Github button link"
-msgstr "Enlace al botón de Github"
+msgstr "Botón con enlace a Github"
 
 #. alt attribute
 #: File: index.html
 #: ID: ab203f09b4665b9dc2ee196872f8fb3d
 msgid "Bitbucket button link"
-msgstr "Enlace al botón de Bitbucket"
+msgstr "Botón con enlace a Bitbucket"
 
 #: File: index.html
 #: ID: 1d11f55d5e0a24c0e814788f2372d17a
@@ -53,4 +58,3 @@ msgstr "Siéntase libre de echar un vistazo"
 #: ID: bf09c0ecb9c023f0879719bb4d2eba4f
 msgid "picture of Pablo"
 msgstr "foto de Pablo"
-

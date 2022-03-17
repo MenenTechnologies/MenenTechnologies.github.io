@@ -1,6 +1,6 @@
 -Install perl
 	https://strawberryperl.com/
--Install serge
+-Install latest version of Serge
 	follow instruction in https://serge.io/download/
 -Add syntax highlighter to Visual Studio Code
 	follow instructions in https://github.com/iafan/Config-Neat/tree/master/highlighters/Visual%20Studio%20Code

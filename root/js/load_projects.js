@@ -34,8 +34,19 @@ function filterProjects() {
   });
 }
 
+//get url
+var url = window.location;
+var baseurl = url.protocol + "//" + url.host + "/";
+var fullurl =  window.location.href;
+
+//get language code
+let language = fullurl.replace(baseurl, "");
+language = language.replace("projects.html", "");
+language = language.replace("/", "");
+language = language.length > 2 || language.length == 0 ? "en" : language;
+
 // get data and build grid
-$.getJSON("root/data/en/projects.json", function (data) {
+$.getJSON(baseurl + "/root/data/" + language + "/projects.json", function (data) {
   // console.log(data.projects);
   let projects = data.projects;
 
@@ -54,7 +65,7 @@ $.getJSON("root/data/en/projects.json", function (data) {
     div_desc = "<div class='description'>" + project.description + "</div>";
     button_text = project.tags.includes("Game") ? "Play" : "See";
     button = project.link ? "<a class='button rounded play' href='" + project.link + "'>" + button_text + "</a>" : "";
-    image = project.image ? "<img src='" + project.image + "'>" : "";
+    image = project.image ? "<img src='" + baseurl + project.image + "'>" : "";
     return (
       "<div class='card' tags='" +
       project.tags.join(" ") +

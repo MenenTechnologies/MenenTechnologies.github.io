@@ -142,7 +142,7 @@ jobs
         id                          html.job
         name                        HTML parsing job
         source_dir                  ../../
-        source_match                \index.html$
+        source_match                (index.html|navbar.html)$
         # source_exclude              (games.html|about.html)$
         debug                       YES
 
@@ -152,7 +152,7 @@ jobs
 
             data
             {
-                include_tags        title
+                include_tags        title a
 
                 email_from          nenendevs@gmail.org
                 email_to            nenendevs@gmail.org

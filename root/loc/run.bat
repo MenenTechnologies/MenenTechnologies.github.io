@@ -10,6 +10,5 @@
 	
 	echo:
 	echo COPYING FILES
-	copy /y ..\..\navbar.html ..\..\es\navbar.html
 	copy /y ..\..\projects.html ..\..\es\projects.html
 )

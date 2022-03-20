@@ -1,6 +1,6 @@
 msgid ""
 msgstr ""
-"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Language: es\n"
 "Generated-By: Serge 1.4\n"
@@ -58,3 +58,4 @@ msgstr "Siéntase libre de echar un vistazo"
 #: ID: bf09c0ecb9c023f0879719bb4d2eba4f
 msgid "picture of Pablo"
 msgstr "foto de Pablo"
+

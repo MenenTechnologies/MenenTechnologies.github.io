@@ -1,10 +1,25 @@
 $(document).ready(function(){
     
+    // get url
+    var url = window.location;
+    var path = url.pathname;
+    var baseurl = url.protocol + "//" + url.host + "/";
+    var fullurl =  window.location.href;
+
     // find out current language
     const languages_available = new Set(["en", "es"]);
-    let path = window.location.pathname;
     var lang = path.substring(1, path.substring(1).search("/") + 1);
     lang = languages_available.has(lang) ? lang : "en";
+
+    // load scripts with translations
+    if (lang != "en") {
+        $("<script>", {
+            src: baseurl + "root/lib/jQuery-UI-Multiple-Select-Widget/i18n/jquery.multiselect.es.js",
+        }).appendTo("head");
+        $("<script>", {
+            src: baseurl + "root/lib/jQuery-UI-Multiple-Select-Widget/i18n/jquery.multiselect.filter.es.js",
+        }).appendTo("head");
+    }
 
     $("#navbar").load("navbar.html", function () {
         // load finished:
@@ -22,12 +37,6 @@ $(document).ready(function(){
         $("#language-pulldown").selectmenu({
             width: 100,
             select: function( event, ui ) {
-                // get url
-                let url = window.location;
-                let path = url.pathname;
-                let baseurl = url.protocol + "//" + url.host + "/";
-                let fullurl =  window.location.href;
-
                 // get language code from selected item in dropdown
                 let next_lang = ui.item.element.attr('id');
 

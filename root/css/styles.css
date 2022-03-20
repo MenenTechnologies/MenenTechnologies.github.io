@@ -91,6 +91,16 @@ body.indexpage {
     justify-content: right;
 }
 
+.localization-icon {
+    display: inline-block;
+    background-image: url("../images/translation-icon.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 21px;
+    height: 21px;
+    filter: invert(68%) sepia(14%) saturate(2352%) hue-rotate(181deg) brightness(100%) contrast(97%);  /* changing color from black to #68b4fa */
+}
+
 /* Intro */
 
 .first-div {

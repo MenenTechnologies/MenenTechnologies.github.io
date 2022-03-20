@@ -35,7 +35,13 @@ $(document).ready(function(){
         $("#language-pulldown option[id='" + lang + "']").attr("selected", "selected");
 
         $("#language-pulldown").selectmenu({
-            width: 100,
+            width: 40,
+            create: function (event, ui) {
+                //remove items and add my own icon
+                let button = $("#language-pulldown").selectmenu("widget");
+                button.children("span").remove();
+                $("<span>", { class: "ui-selectmenu-icon localization-icon"}).appendTo(button);
+            },
             select: function( event, ui ) {
                 // get language code from selected item in dropdown
                 let next_lang = ui.item.element.attr('id');

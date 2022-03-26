@@ -8,7 +8,7 @@ $.extend($.ech.multiselect.prototype.options, {
 		checkAll: {text: 'Marca todas', title: 'Marca todas'}, 
 		uncheckAll: {text: 'Desmarque todas', title: 'Desmarque todas'}
 	},
-	noneSelectedText: 'Seleccione las opciones',
+	noneSelectedText: 'Seleccione opciones',
 	selectedText: '# seleccionado'
 });
 	

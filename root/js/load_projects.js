@@ -156,8 +156,18 @@ $(document).ready(function () {
     for (let i = 0; i < projects.length; i++) {
       projects[i].tags.forEach((tag) => tags.add(tag));
     }
-    createTagsFilter(tags);
 
-    createYearsFilter();
+    // create filters
+    if (language == "en") {
+      createTagsFilter(tags);
+      createYearsFilter();
+    } else {
+      // for non-English, first load scripts with translations
+      let scriptUrl = baseurl + "root/lib/jQuery-UI-Multiple-Select-Widget/i18n/jquery.multiselect." + language + ".js";
+      $.getScript(scriptUrl, function () {
+        createTagsFilter(tags);
+        createYearsFilter();
+      });
+    }
   });
 });

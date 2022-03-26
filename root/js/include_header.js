@@ -36,6 +36,7 @@ $(document).ready(function(){
 
         $("#language-pulldown").selectmenu({
             width: 40,
+            position: { my : "right top", at: "right bottom" },
             create: function (event, ui) {
                 //remove items and add my own icon
                 let button = $("#language-pulldown").selectmenu("widget");

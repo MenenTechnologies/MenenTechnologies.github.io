@@ -1,6 +1,6 @@
 msgid ""
 msgstr ""
-"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Language: es\n"
 "Generated-By: Serge 1.4\n"
@@ -11,9 +11,7 @@ msgstr ""
 msgid ""
 "Game in first person in which you need to fight the minotaur and find the "
 "exit of the maze."
-msgstr ""
-"Juego en primera persona en el que tienes que luchar contra el minotauro y "
-"encontrar la salida del laberinto."
+msgstr "Juego en primera persona en el que tienes que luchar contra el minotauro y encontrar la salida del laberinto."
 
 #. /projects[0]/title
 #: File: projects.json
@@ -39,9 +37,7 @@ msgstr "Este portafolio web"
 msgid ""
 "Relaxing game for the LEGO Ideas Game Jam. Grow different types of crops "
 "and harvest them to earn money."
-msgstr ""
-"Relajante juego para la competición de videojuegos LEGO Ideas. Haz crecer "
-"diferentes tipos de cultivos y recógelos para ganar dinero."
+msgstr "Relajante juego para la competición de videojuegos LEGO Ideas. Haz crecer diferentes tipos de cultivos y recógelos para ganar dinero."
 
 #. /projects[2]/title
 #: File: projects.json
@@ -53,9 +49,7 @@ msgstr "Granja LEGO"
 #: File: projects.json
 #: ID: d288f489c38cbaf9e6709341abc89078
 msgid "First game I made to practice my new acquired skills in Unity."
-msgstr ""
-"Primer juego que hice para practicar mis nuevas habilidades adquiridas en "
-"Unity."
+msgstr "Primer juego que hice para practicar mis nuevas habilidades adquiridas en Unity."
 
 #. /projects[3]/title
 #: File: projects.json
@@ -69,9 +63,7 @@ msgstr "Asteroides"
 msgid ""
 "Game made in group with some folks from the Baltimore Indie Game Developers "
 "Group."
-msgstr ""
-"Juego realizado en equipo con algunas personas del grupo de desarrolladores "
-"de videojuegos indie de Baltimore."
+msgstr "Juego realizado en equipo con algunas personas del grupo de desarrolladores de videojuegos indie de Baltimore."
 
 #. /projects[4]/title
 #: File: projects.json
@@ -114,3 +106,4 @@ msgstr "Web"
 #: ID: 1bd5dacd0879b85b57040854da8e089e
 msgid "Year:"
 msgstr "Año:"
+

@@ -25,11 +25,15 @@ $(document).ready(function(){
         // load finished:
 
         // make active the header that matches the current file
+        let activeHeaderFound = false;
         $("a.header").each(function (index) {
             if ( window.location.pathname.indexOf( $(this).attr("id") ) >= 0 ) {
                 $(this).addClass("active");
+                activeHeaderFound = true;
             }
         });
+        if (!activeHeaderFound) // main page without including "index" is not found
+            $("a.header").first().addClass("active");
         
         // select current language in language pulldown
         $("#language-pulldown option[id='" + lang + "']").attr("selected", "selected");

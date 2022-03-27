@@ -5,7 +5,7 @@
 
 $.extend($.ech.multiselect.prototype.options, {
 	linkInfo: {
-		checkAll: {text: 'Marca todas', title: 'Marca todas'}, 
+		checkAll: {text: 'Marque todas', title: 'Marque todas'}, 
 		uncheckAll: {text: 'Desmarque todas', title: 'Desmarque todas'}
 	},
 	noneSelectedText: 'Seleccione opciones',

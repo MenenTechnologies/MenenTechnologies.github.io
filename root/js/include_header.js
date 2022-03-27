@@ -45,7 +45,8 @@ $(document).ready(function(){
                 //remove items and add my own icon
                 let button = $("#language-pulldown").selectmenu("widget");
                 button.children("span").remove();
-                $("<span>", { class: "ui-selectmenu-icon localization-icon"}).appendTo(button);
+                // $("<span>", { class: "ui-selectmenu-icon localization-icon"}).appendTo(button);
+                $("<span>", { class: "text", html: "<sup>文</sup><sub>A</sub>"}).appendTo(button);
             },
             select: function( event, ui ) {
                 // get language code from selected item in dropdown

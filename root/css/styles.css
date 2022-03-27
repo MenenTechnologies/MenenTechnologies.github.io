@@ -80,6 +80,22 @@ body {
     justify-content: right;
 }
 
+#language-pulldown-button {
+    text-align: center;
+}
+
+#language-pulldown-button > .text {
+    font-size: 0.6rem;
+}
+
+#language-pulldown-button > .text > sup {
+    font-size: 0.6rem;
+}
+
+#language-pulldown-button > .text > sub {
+    font-size: 0.8rem;
+}
+
 .localization-icon {
     display: inline-block;
     background-image: url("../images/translation-icon.svg");

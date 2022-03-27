@@ -4,9 +4,7 @@ var baseurl = url.protocol + "//" + url.host + "/";
 var fullurl = window.location.href;
 
 //get language code
-let language = fullurl.replace(baseurl, "");
-language = language.replace("projects.html", "");
-language = language.replace("/", "");
+let language = fullurl.replace(baseurl, "").split("/")[0];
 language = language.length > 2 || language.length == 0 ? "en" : language;
 
 var stringsMap; // values assigned on $(document).ready > $getJSON

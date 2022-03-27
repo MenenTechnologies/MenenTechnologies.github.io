@@ -18,17 +18,7 @@ body {
     margin: 0;
     display: flex;
     flex-direction: column;
-}
-
-body.indexpage {
-    background-image: url("../images/backgrounds/pexels-marta-branco-1194713_lower-opacity-dark60.jpg");
-    background-attachment: fixed;
-    background-size: cover;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center center;
+    z-index: 0;
 }
 
 .main-container {
@@ -50,6 +40,7 @@ body.indexpage {
 .navbar {
     width: 100%;
     background-image: linear-gradient(#1035e8, #1035e844);
+    z-index: 2;
 }
 
 .navbar-container {
@@ -103,10 +94,42 @@ body.indexpage {
 
 /* Intro */
 
+.background-indexpage {
+    background-image: url("../images/backgrounds/pexels-marta-branco-1194713_lower-opacity-dark60_small.jpg");
+    background-attachment: fixed;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    filter: blur(3px) grayscale(0.30);
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    z-index: 1;
+}
+
 .first-div {
     flex-grow: 1;
     padding-top: 5%;
     padding-bottom: 5%;
+}
+
+.centered-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    column-gap: 10%;
+    z-index: 2;
 }
 
 .info {

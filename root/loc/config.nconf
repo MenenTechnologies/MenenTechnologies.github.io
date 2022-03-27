@@ -128,7 +128,7 @@ jobs
 
             data
             {
-                path_matches        \/(title|tags|description)$
+                path_matches        \/(title$|description$)|(strings\/)
             }
         }
 

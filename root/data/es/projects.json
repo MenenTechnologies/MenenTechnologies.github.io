@@ -7,7 +7,7 @@
          "tags" : [
             "Software",
             "Game",
-            "In development"
+            "InDevelopment"
          ],
          "title" : "Laberinto del minotauro",
          "year" : 2022
@@ -21,7 +21,7 @@
             "Web"
          ],
          "title" : "Este portafolio web",
-         "year" : "2021-now"
+         "year" : "2022"
       },
       {
          "description" : "Relajante juego para la competición de videojuegos LEGO Ideas. Haz crecer diferentes tipos de cultivos y recógelos para ganar dinero.",
@@ -56,5 +56,11 @@
          "title" : "Ludum Dare 44: Dinero Suelto",
          "year" : 2019
       }
-   ]
+   ],
+   "strings" : {
+      "Game" : "Juego",
+      "InDevelopment" : "En desarrollo",
+      "Software" : "Software",
+      "Web" : "Web"
+   }
 }

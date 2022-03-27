@@ -9,6 +9,8 @@ language = language.replace("projects.html", "");
 language = language.replace("/", "");
 language = language.length > 2 || language.length == 0 ? "en" : language;
 
+var stringsMap; // values assigned on $(document).ready > $getJSON
+
 // function to create dropdown filters for tags
 // - tags is a set
 function createTagsFilter(tags) {
@@ -17,7 +19,7 @@ function createTagsFilter(tags) {
   $("<div/>", { class: "text", html: "Tags:" }).appendTo(groupFilter);
   var dropdownTags = $("<select/>", { id: "filter-by-tag", multiple: true });
   for (var tag of tags) {
-    $("<option />", { selected: true, value: tag, html: tag }).appendTo(dropdownTags);
+    $("<option />", { selected: true, value: tag, html: stringsMap.get(tag) }).appendTo(dropdownTags);
   }
   dropdownTags.appendTo(groupFilter);
   $("#filter-by-tag").multiselect({
@@ -104,7 +106,7 @@ function generateCard(project) {
   let tags = [];
   if (project.tags) {
     for (let i = 0; i < project.tags.length; i++) {
-      tags.push("<div class='tag'>" + project.tags[i] + "</div>");
+      tags.push("<div class='tag'>" + stringsMap.get(project.tags[i]) + "</div>");
     }
     if (project.year) tags.push("<div class='tag'>" + project.year + "</div>");
   }
@@ -137,6 +139,7 @@ $(document).ready(function () {
   $.getJSON(baseurl + "/root/data/" + language + "/projects.json", function (data) {
     // console.log(data.projects);
     let projects = data.projects;
+    stringsMap = new Map(Object.entries(data.strings));
 
     let items = [];
     for (let i = 0; i < projects.length; i++) {

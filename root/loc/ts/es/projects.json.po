@@ -71,3 +71,27 @@ msgstr "Juego realizado en equipo con algunas personas del grupo de desarrollado
 msgid "Ludum Dare 44: Loose Change"
 msgstr "Ludum Dare 44: Dinero Suelto"
 
+#. /strings/Game
+#: File: projects.json
+#: ID: dff66d68d747d86e8b55a3f5dd8621d1
+msgid "Game"
+msgstr "Juego"
+
+#. /strings/InDevelopment
+#: File: projects.json
+#: ID: c9bc0695550062cb1debecbde55414e1
+msgid "In Development"
+msgstr "En desarrollo"
+
+#. /strings/Software
+#: File: projects.json
+#: ID: 8bc4a2d5c8414f94716468c5e31da4af
+msgid "Software"
+msgstr "Software"
+
+#. /strings/Web
+#: File: projects.json
+#: ID: 6c2722f05d9c3e18f4ddc160906f6c67
+msgid "Web"
+msgstr "Web"
+

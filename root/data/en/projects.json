@@ -2,7 +2,7 @@
   "projects": [
     {
       "title": "Minotaur's Maze",
-      "tags": ["Software", "Game", "In development"],
+      "tags": ["Software", "Game", "InDevelopment"],
       "year": 2022,
       "description": "Game in first person in which you need to fight the minotaur and find the exit of the maze.",
       "link": "https://menendevs.com/Maze/Build_20200228",
@@ -11,7 +11,7 @@
     {
       "title": "This Portfolio Website",
       "tags": ["Software", "Web"],
-      "year": "2021-now",
+      "year": "2022",
       "description": "Website that highlights my experience and personal projects.",
       "link": "https://menendevs.com/",
       "image": ""
@@ -40,5 +40,11 @@
       "link": "https://ldjam.com/events/ludum-dare/44/loose-change",
       "image": ""
     }
-  ]
+  ],
+  "strings": {
+    "Software": "Software",
+    "Game": "Game",
+    "InDevelopment": "In Development",
+    "Web": "Web"
+  }
 }

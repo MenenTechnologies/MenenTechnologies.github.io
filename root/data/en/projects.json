@@ -42,8 +42,8 @@
     }
   ],
   "strings": {
-    "Type:": "Type:",
-    "Year:": "Year:",
+    "TypeFilterTitle": "Type:",
+    "YearFilterTitle": "Year:",
     "Software": "Software",
     "Game": "Game",
     "InDevelopment": "In Development",

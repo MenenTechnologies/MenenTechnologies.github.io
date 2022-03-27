@@ -61,6 +61,8 @@
       "Game" : "Juego",
       "InDevelopment" : "En desarrollo",
       "Software" : "Software",
-      "Web" : "Web"
+      "TypeFilterTitle" : "Tipo:",
+      "Web" : "Web",
+      "YearFilterTitle" : "Año:"
    }
 }

@@ -16,7 +16,7 @@ var stringsMap; // values assigned on $(document).ready > $getJSON
 function createTagsFilter(tags) {
   var groupFilter = $(".group-filter");
 
-  $("<div/>", { class: "text", html: "Tags:" }).appendTo(groupFilter);
+  $("<div/>", { class: "text", html: stringsMap.get("Type:") }).appendTo(groupFilter);
   var dropdownTags = $("<select/>", { id: "filter-by-tag", multiple: true });
   for (var tag of tags) {
     $("<option />", { selected: true, value: tag, html: stringsMap.get(tag) }).appendTo(dropdownTags);
@@ -42,7 +42,7 @@ function createTagsFilter(tags) {
 function createYearsFilter() {
   var groupFilter = $(".group-filter");
 
-  $("<div/>", { class: "text", html: "Year:" }).appendTo(groupFilter);
+  $("<div/>", { class: "text", html: stringsMap.get("Year:") }).appendTo(groupFilter);
   var dropdownYears = $("<select/>", { id: "filter-by-year", multiple: true });
   for (let year = 2022; year >= 2019; year--) {
     $("<option />", { selected: true, value: year, html: year }).appendTo(dropdownYears);

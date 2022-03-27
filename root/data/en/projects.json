@@ -42,6 +42,8 @@
     }
   ],
   "strings": {
+    "Type:": "Type:",
+    "Year:": "Year:",
     "Software": "Software",
     "Game": "Game",
     "InDevelopment": "In Development",

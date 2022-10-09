@@ -139,26 +139,31 @@ $(document).ready(function () {
     let projects = data.projects;
     stringsMap = new Map(Object.entries(data.strings));
 
+    // add div for intro
+    var introDiv = $("<p/>", { class: "", html: stringsMap.get("Intro") });
+    introDiv.appendTo("#projects-container");
+
+    // add div for filters
+    var groupFilter = $("<div/>", { class: "group-filter" });
+    groupFilter.appendTo("#projects-container");
+
+    // add div for projects
+    var cardsDiv = $("<div/>", { class: "cards" });
+    cardsDiv.appendTo("#projects-container");
+
+    // generate list of projects
     let items = [];
     for (let i = 0; i < projects.length; i++) {
       items.push(generateCard(projects[i]));
     }
-
-    $("<div/>", {
-      class: "cards",
-      html: items.join(""),
-    }).appendTo("#projects-container");
+    cardsDiv.html(items.join(""));
 
     // create filters
-    var groupFilter = $("<div/>", { class: "group-filter" });
-    groupFilter.prependTo("#projects-container");
-
     var tags = new Set();
     for (let i = 0; i < projects.length; i++) {
       projects[i].tags.forEach((tag) => tags.add(tag));
     }
 
-    // create filters
     if (language == "en") {
       createTagsFilter(tags);
       createYearsFilter();

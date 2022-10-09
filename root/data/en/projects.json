@@ -14,7 +14,7 @@
       "year": "2022",
       "description": "Website that highlights my experience and personal projects.",
       "link": "https://menendevs.com/",
-      "image": ""
+      "image": "root/images/projects/PortfolioWebsite.png"
     },
     {
       "title": "LEGO Farm",
@@ -38,7 +38,7 @@
       "year": 2019,
       "description": "Game made in group with some folks from the Baltimore Indie Game Developers Group.",
       "link": "https://ldjam.com/events/ludum-dare/44/loose-change",
-      "image": ""
+      "image": "root/images/projects/LooseChange.png"
     }
   ],
   "strings": {

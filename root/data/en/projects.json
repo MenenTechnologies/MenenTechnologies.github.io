@@ -1,6 +1,15 @@
 {
   "projects": [
     {
+      "title": "Cookie Devourer",
+      "tags": ["Software", "Web"],
+      "skills": ["HTML", "CSS", "Javascript"],
+      "year": 2022,
+      "description": "Cache remover extension for Google Chrome. It gathers all cookies stored by the current active website, displays them in a tree view and allows to remove any or all of them.",
+      "link": "https://github.com/MenenDevs/CacheRemover",
+      "image": "root/images/projects/CacheRemover.png"
+    },
+    {
       "title": "Minotaur's Maze",
       "tags": ["Software", "Game", "InDevelopment"],
       "year": 2022,

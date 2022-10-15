@@ -1,71 +1,95 @@
 msgid ""
 msgstr ""
-"Content-Type: text/plain; charset=utf-8\n"
+"Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Language: es\n"
 "Generated-By: Serge 1.4\n"
 
 #. /projects[0]/description
 #: File: projects.json
+#: ID: e6ebb0774a3d835a2d0a427111b79be8
+msgid ""
+"Cache remover extension for Google Chrome. It gathers all cookies stored by "
+"the current active website, displays them in a tree view and allows to "
+"remove any or all of them."
+msgstr ""
+
+#. /projects[0]/title
+#: File: projects.json
+#: ID: f36afcb13160696167ce2cc5c583d855
+msgid "Cookie Devourer"
+msgstr ""
+
+#. /projects[1]/description
+#: File: projects.json
 #: ID: efd8c9c84126b86b905d2d2c2639d42a
 msgid ""
 "Game in first person in which you need to fight the minotaur and find the "
 "exit of the maze."
-msgstr "Juego en primera persona en el que tienes que luchar contra el minotauro y encontrar la salida del laberinto."
+msgstr ""
+"Juego en primera persona en el que tienes que luchar contra el minotauro y "
+"encontrar la salida del laberinto."
 
-#. /projects[0]/title
+#. /projects[1]/title
 #: File: projects.json
 #: ID: afb14c54be47ef80e7ba8c25c7b02b29
 msgid "Minotaur's Maze"
 msgstr "Laberinto del minotauro"
 
-#. /projects[1]/description
-#: File: projects.json
-#: ID: b80bd3ece02196802eade8cc962c2815
-msgid "Website that highlights my experience and personal projects."
-msgstr "Sitio web que destaca mi experiencia y mis proyectos personales."
-
-#. /projects[1]/title
-#: File: projects.json
-#: ID: b30e1f336aa8789146c91779cd0e7d03
-msgid "This Portfolio Website"
-msgstr "Este portafolio web"
-
 #. /projects[2]/description
+#: File: projects.json
+#: ID: 11a88ab06a2d7c3804960b55e2f9f1bc
+msgid ""
+"Website that highlights my experience and personal projects. It is "
+"localized to several languages."
+msgstr ""
+
+#. /projects[2]/title
+#: File: projects.json
+#: ID: d27b7c60d013c063179913503bdf770c
+msgid "This website"
+msgstr ""
+
+#. /projects[3]/description
 #: File: projects.json
 #: ID: 94d3c1cfe845b5ef5f21a90aff08311e
 msgid ""
 "Relaxing game for the LEGO Ideas Game Jam. Grow different types of crops "
 "and harvest them to earn money."
-msgstr "Relajante juego para la competición de videojuegos LEGO Ideas. Haz crecer diferentes tipos de cultivos y recógelos para ganar dinero."
+msgstr ""
+"Relajante juego para la competición de videojuegos LEGO Ideas. Haz crecer "
+"diferentes tipos de cultivos y recógelos para ganar dinero."
 
-#. /projects[2]/title
+#. /projects[3]/title
 #: File: projects.json
 #: ID: 40ceb777ce50f70d8153f3810b768164
 msgid "LEGO Farm"
 msgstr "Granja LEGO"
 
-#. /projects[3]/description
+#. /projects[4]/description
 #: File: projects.json
 #: ID: d288f489c38cbaf9e6709341abc89078
 msgid "First game I made to practice my new acquired skills in Unity."
-msgstr "Primer juego que hice para practicar mis nuevas habilidades adquiridas en Unity."
+msgstr ""
+"Primer juego que hice para practicar mis nuevas habilidades adquiridas en "
+"Unity."
 
-#. /projects[3]/title
+#. /projects[4]/title
 #: File: projects.json
 #: ID: b032a9f97b2fd429c7346b47c990c2af
 msgid "Asteroids"
 msgstr "Asteroides"
 
-#. /projects[4]/description
+#. /projects[5]/description
 #: File: projects.json
-#: ID: be121d8e5731ee8e2d4effeb7da41486
+#: ID: d926a824bed0c51355154d26d5800bd1
 msgid ""
-"Game made in group with some folks from the Baltimore Indie Game Developers "
-"Group."
-msgstr "Juego realizado en equipo con algunas personas del grupo de desarrolladores de videojuegos indie de Baltimore."
+"Game for the Ludum Dare 44 game jam, developed in group with some folks "
+"from the Baltimore Indie Game Developers Group. I did most of the "
+"programming and set up the scenes in Unity."
+msgstr ""
 
-#. /projects[4]/title
+#. /projects[5]/title
 #: File: projects.json
 #: ID: 826106862e83f313a90fbce04922d03b
 msgid "Ludum Dare 44: Loose Change"
@@ -83,13 +107,41 @@ msgstr "Juego"
 msgid "In Development"
 msgstr "En desarrollo"
 
+#. /strings/Intro
+#: File: projects.json
+#: ID: 86065984427067a7c45cbca91a29a5dc
+msgid ""
+"I like to keep improving and learning new skills. I look for skills that "
+"are fun, useful and complementary to my job as a front-end software "
+"engineer. This is a list of projects that I have created in the last years "
+"during my free time to practice those skills."
+msgstr ""
+
+#. /strings/Play
+#: File: projects.json
+#: ID: 2bf8a8f42f401914c9296852b1a87106
+msgid "Play"
+msgstr ""
+
+#. /strings/See
+#: File: projects.json
+#: ID: b1f54236f155e6aa633d40c353d6fe38
+msgid "See"
+msgstr ""
+
+#. /strings/Skills:
+#: File: projects.json
+#: ID: e27d914c1091dabee45352c452f27637
+msgid "Skills:"
+msgstr ""
+
 #. /strings/Software
 #: File: projects.json
 #: ID: 8bc4a2d5c8414f94716468c5e31da4af
 msgid "Software"
 msgstr "Software"
 
-#. /strings/TypeFilterTitle
+#. /strings/Type:
 #: File: projects.json
 #: ID: 9bc1396df7cb64691de4750331ec4f5f
 msgid "Type:"
@@ -101,9 +153,8 @@ msgstr "Tipo:"
 msgid "Web"
 msgstr "Web"
 
-#. /strings/YearFilterTitle
+#. /strings/Year:
 #: File: projects.json
 #: ID: 1bd5dacd0879b85b57040854da8e089e
 msgid "Year:"
 msgstr "Año:"
-

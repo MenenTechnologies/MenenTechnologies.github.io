@@ -1,9 +1,31 @@
 {
    "projects" : [
       {
+         "description" : "Cache remover extension for Google Chrome. It gathers all cookies stored by the current active website, displays them in a tree view and allows to remove any or all of them.",
+         "image" : "root\/images\/projects\/CacheRemover.png",
+         "link" : "https:\/\/github.com\/MenenDevs\/CacheRemover",
+         "skills" : [
+            "HTML",
+            "CSS",
+            "Javascript",
+            "jQuery"
+         ],
+         "tags" : [
+            "Software",
+            "Web"
+         ],
+         "title" : "Cookie Devourer",
+         "year" : 2022
+      },
+      {
          "description" : "Juego en primera persona en el que tienes que luchar contra el minotauro y encontrar la salida del laberinto.",
          "image" : "",
          "link" : "https:\/\/menendevs.com\/Maze\/Build_20200228",
+         "skills" : [
+            "Unity",
+            "C#",
+            "Blender"
+         ],
          "tags" : [
             "Software",
             "Game",
@@ -13,20 +35,30 @@
          "year" : 2022
       },
       {
-         "description" : "Sitio web que destaca mi experiencia y mis proyectos personales.",
-         "image" : "",
+         "description" : "Website that highlights my experience and personal projects. It is localized to several languages.",
+         "image" : "root\/images\/projects\/PortfolioWebsite.png",
          "link" : "https:\/\/menendevs.com\/",
+         "skills" : [
+            "HTML",
+            "CSS",
+            "Javascript",
+            "jQuery"
+         ],
          "tags" : [
             "Software",
             "Web"
          ],
-         "title" : "Este portafolio web",
+         "title" : "This website",
          "year" : "2022"
       },
       {
          "description" : "Relajante juego para la competición de videojuegos LEGO Ideas. Haz crecer diferentes tipos de cultivos y recógelos para ganar dinero.",
          "image" : "root\/images\/projects\/LegoFarm.jpg",
          "link" : "https:\/\/ideas.lego.com\/challenges\/6811cf30-f944-4dfa-8714-9b38be6fbb52\/application\/ccc48507-85d4-403e-8fcb-a9a2ec69c19b",
+         "skills" : [
+            "Unity",
+            "C#"
+         ],
          "tags" : [
             "Software",
             "Game"
@@ -38,6 +70,12 @@
          "description" : "Primer juego que hice para practicar mis nuevas habilidades adquiridas en Unity.",
          "image" : "root\/images\/projects\/Asteroids.png",
          "link" : "https:\/\/menendevs.com\/Asteroids\/Build_20210214\/",
+         "skills" : [
+            "Unity",
+            "C#",
+            "Blender",
+            "Photoshop"
+         ],
          "tags" : [
             "Software",
             "Game"
@@ -46,9 +84,13 @@
          "year" : 2020
       },
       {
-         "description" : "Juego realizado en equipo con algunas personas del grupo de desarrolladores de videojuegos indie de Baltimore.",
-         "image" : "",
+         "description" : "Game for the Ludum Dare 44 game jam, developed in group with some folks from the Baltimore Indie Game Developers Group. I did most of the programming and set up the scenes in Unity.",
+         "image" : "root\/images\/projects\/LooseChange.png",
          "link" : "https:\/\/ldjam.com\/events\/ludum-dare\/44\/loose-change",
+         "skills" : [
+            "Unity",
+            "C#"
+         ],
          "tags" : [
             "Software",
             "Game"
@@ -60,9 +102,13 @@
    "strings" : {
       "Game" : "Juego",
       "InDevelopment" : "En desarrollo",
+      "Intro" : "I like to keep improving and learning new skills. I look for skills that are fun, useful and complementary to my job as a front-end software engineer. This is a list of projects that I have created in the last years during my free time to practice those skills.",
+      "Play" : "Play",
+      "See" : "See",
+      "Skills:" : "Skills:",
       "Software" : "Software",
-      "TypeFilterTitle" : "Tipo:",
+      "Type:" : "Tipo:",
       "Web" : "Web",
-      "YearFilterTitle" : "Año:"
+      "Year:" : "Año:"
    }
 }

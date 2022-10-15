@@ -1,11 +1,13 @@
 
 -Projects:
+	sort type dropdown
 	change colors of dropdowns to match the rest of the UI
 	add more projects to json file
 
+-Blur/fade arrow behind text in index page to read text better
 -Include curriculum in Contact page
 -Update Curriculum
--Localization to Spanish and maybe other languages (Japanese and Arabic to learn what changes need to be made) and test responsiveness again
+-Localization to other languages (Japanese and Arabic to learn what changes need to be made) and test responsiveness again
 -Logo: "Menen" in Ravie font ("M" in narrow devices)
 
 

@@ -8,6 +8,8 @@ let language = fullurl.replace(baseurl, "").split("/")[0];
 language = language.length > 2 || language.length == 0 ? "en" : language;
 
 var stringsMap; // values assigned on $(document).ready > $getJSON
+const getTranslation = (id) => stringsMap.get(id) || id; // returns translation if available, otherwise the id
+const validateString = (str) => str || ""; // returns the string if valid, otherwise empty string
 
 // function to create dropdown filters for tags
 // - tags is a set
@@ -16,10 +18,10 @@ function createTagsFilter(tags) {
 
   var groupFilter = $(".group-filter");
 
-  $("<div/>", { class: "text", html: stringsMap.get("TypeFilterTitle") }).appendTo(groupFilter);
+  $("<div/>", { class: "text", html: getTranslation("Type:") }).appendTo(groupFilter);
   var dropdownTags = $("<select/>", { id: "filter-by-tag", multiple: true });
   for (var tag of tags) {
-    $("<option />", { selected: true, value: tag, html: stringsMap.get(tag) }).appendTo(dropdownTags);
+    $("<option />", { selected: true, value: tag, html: getTranslation(tag) }).appendTo(dropdownTags);
   }
   dropdownTags.appendTo(groupFilter);
   $("#filter-by-tag").multiselect({
@@ -48,7 +50,7 @@ function createSkillsFilter(skills) {
   // convert to sorted array
   skills = Array.from(skills).sort((a, b) => a.localeCompare(b, undefined, { sensitivity: "base" }));
 
-  $("<div/>", { class: "text", html: stringsMap.get("SkillsFilterTitle") }).appendTo(groupFilter);
+  $("<div/>", { class: "text", html: getTranslation("Skills:") }).appendTo(groupFilter);
   var dropdownSkills = $("<select/>", { id: "filter-by-skill", multiple: true });
   for (var skill of skills) {
     $("<option />", { selected: true, value: skill, html: skill }).appendTo(dropdownSkills);
@@ -72,7 +74,7 @@ function createSkillsFilter(skills) {
 function createYearsFilter() {
   var groupFilter = $(".group-filter");
 
-  $("<div/>", { class: "text", html: stringsMap.get("YearFilterTitle") }).appendTo(groupFilter);
+  $("<div/>", { class: "text", html: getTranslation("Year:") }).appendTo(groupFilter);
   var dropdownYears = $("<select/>", { id: "filter-by-year", multiple: true });
   for (let year = 2022; year >= 2019; year--) {
     $("<option />", { selected: true, value: year, html: year }).appendTo(dropdownYears);
@@ -145,13 +147,13 @@ function filterProjects() {
 
 //function to generate a card of each project
 function generateCard(project) {
-  div_title = "<h3 class='title'>" + project.title + "</h3>";
+  div_title = "<h3 class='title'>" + validateString(project.title) + "</h3>";
 
   // create elements for tags
   let tags = [];
   if (project.tags) {
     for (let i = 0; i < project.tags.length; i++) {
-      tags.push("<div class='tag'>" + stringsMap.get(project.tags[i]) + "</div>");
+      tags.push("<div class='tag'>" + getTranslation(project.tags[i]) + "</div>");
     }
   }
 
@@ -164,8 +166,8 @@ function generateCard(project) {
     }
   }
 
-  div_desc = "<div class='description'>" + project.description + "</div>";
-  button_text = project.tags ? (project.tags.includes("Game") ? "Play" : "See") : "";
+  div_desc = "<div class='description'>" + validateString(project.description) + "</div>";
+  button_text = project.tags ? (project.tags.includes("Game") ? getTranslation("Play") : getTranslation("See")) : "";
   button = button_text && project.link ? "<a class='button rounded play' href='" + project.link + "'>" + button_text + "</a>" : "";
   image = project.image ? "<img src='" + baseurl + project.image + "'>" : "";
   return (

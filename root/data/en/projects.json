@@ -57,12 +57,14 @@
   ],
   "strings": {
     "Intro": "I like to keep improving and learning new skills. I look for skills that are fun, useful and complementary to my job as a front-end software engineer. This is a list of projects that I have created in the last years during my free time to practice those skills.",
-    "TypeFilterTitle": "Type:",
-    "SkillsFilterTitle": "Skills:",
-    "YearFilterTitle": "Year:",
+    "Type:": "Type:",
+    "Skills:": "Skills:",
+    "Year:": "Year:",
     "Software": "Software",
     "Game": "Game",
     "InDevelopment": "In Development",
-    "Web": "Web"
+    "Web": "Web",
+    "Play": "Play",
+    "See": "See"
   }
 }

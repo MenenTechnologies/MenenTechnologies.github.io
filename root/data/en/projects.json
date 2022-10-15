@@ -19,11 +19,11 @@
       "image": ""
     },
     {
-      "title": "This Portfolio Website",
+      "title": "This website",
       "tags": ["Software", "Web"],
       "skills": ["HTML", "CSS", "Javascript", "jQuery"],
       "year": "2022",
-      "description": "Website that highlights my experience and personal projects.",
+      "description": "Website that highlights my experience and personal projects. It is localized to several languages.",
       "link": "https://menendevs.com/",
       "image": "root/images/projects/PortfolioWebsite.png"
     },

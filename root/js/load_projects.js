@@ -106,7 +106,15 @@ function generateCard(project) {
     for (let i = 0; i < project.tags.length; i++) {
       tags.push("<div class='tag'>" + stringsMap.get(project.tags[i]) + "</div>");
     }
-    if (project.year) tags.push("<div class='tag'>" + project.year + "</div>");
+  }
+
+  if (project.year) tags.push("<div class='year' style='float:right'>" + project.year + "</div>");
+
+  let skillsDivs = [];
+  if (project.skills) {
+    for (let i = 0; i < project.skills.length; i++) {
+      skillsDivs.push("<div class='tag tag-skill'>" + project.skills[i] + "</div>");
+    }
   }
 
   div_desc = "<div class='description'>" + project.description + "</div>";
@@ -123,6 +131,9 @@ function generateCard(project) {
     div_title +
     "<div class='tags'>" +
     tags.join("") +
+    "</div>" +
+    "<div class='tags'>" +
+    skillsDivs.join("") +
     "</div>" +
     div_desc +
     (button ? "<div class='play_container'>" + button + "</div>" : "") +

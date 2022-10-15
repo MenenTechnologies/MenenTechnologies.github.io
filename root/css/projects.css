@@ -59,6 +59,10 @@
   margin-bottom: 0%;
 }
 
+.card .content .year {
+  font-size: 0.8rem;
+}
+
 .card .content .description {
   margin: 2% 0%;
 }
@@ -80,6 +84,11 @@
   border-radius: 5px;
   color: rgb(0, 176, 207);
   background-color: #063a53;
+}
+
+.tag-skill {
+  border: 1px solid rgb(0, 145, 104);
+  color: rgb(0, 180, 130);
 }
 
 .card .media {

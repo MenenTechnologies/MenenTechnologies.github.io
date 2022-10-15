@@ -12,6 +12,8 @@ var stringsMap; // values assigned on $(document).ready > $getJSON
 // function to create dropdown filters for tags
 // - tags is a set
 function createTagsFilter(tags) {
+  if (tags.size == 0) return;
+
   var groupFilter = $(".group-filter");
 
   $("<div/>", { class: "text", html: stringsMap.get("TypeFilterTitle") }).appendTo(groupFilter);
@@ -25,6 +27,36 @@ function createTagsFilter(tags) {
     click: function (event, ui) {
       // console.log(ui.value + " is " + (ui.checked ? "checked" : "unchecked"));
       // console.log($("#filter-by-tag").val()); // issue: clicked item is not included when checking it on
+      filterProjects();
+    },
+    checkAll: function () {
+      filterProjects();
+    },
+    uncheckAll: function () {
+      filterProjects();
+    },
+  });
+}
+
+// function to create dropdown filters for skills
+// - skills is a set
+function createSkillsFilter(skills) {
+  if (skills.size == 0) return;
+
+  var groupFilter = $(".group-filter");
+
+  // convert to sorted array
+  skills = Array.from(skills).sort((a, b) => a.localeCompare(b, undefined, { sensitivity: "base" }));
+
+  $("<div/>", { class: "text", html: stringsMap.get("SkillsFilterTitle") }).appendTo(groupFilter);
+  var dropdownSkills = $("<select/>", { id: "filter-by-skill", multiple: true });
+  for (var skill of skills) {
+    $("<option />", { selected: true, value: skill, html: skill }).appendTo(dropdownSkills);
+  }
+  dropdownSkills.appendTo(groupFilter);
+  $("#filter-by-skill").multiselect({
+    buttonWidth: 150,
+    click: function (event, ui) {
       filterProjects();
     },
     checkAll: function () {
@@ -62,14 +94,25 @@ function createYearsFilter() {
 
 // function to call on dropdowns events to refresh grid
 function filterProjects() {
-  checkedTags = $("#filter-by-tag")
+  var tagsFilter = $("#filter-by-tag");
+  var skillsFilter = $("#filter-by-skill");
+  var yearFilter = $("#filter-by-year");
+
+  var checkedTags = tagsFilter
     .multiselect("getChecked")
     .map(function () {
       return $(this).val();
     })
     .toArray();
 
-  checkedYears = $("#filter-by-year")
+  var checkedSkills = skillsFilter
+    .multiselect("getChecked")
+    .map(function () {
+      return $(this).val();
+    })
+    .toArray();
+
+  var checkedYears = yearFilter
     .multiselect("getChecked")
     .map(function () {
       return $(this).val();
@@ -78,18 +121,22 @@ function filterProjects() {
 
   // check each card for filter settings and show/hide them
   $(".card").each(function (index, item) {
-    // check if tags or year match
-    var foundTag = false,
-      foundYear = false;
+    // check if tags, skills or year match
+    var foundTag = tagsFilter.length == 0, // start with true if there is no filter
+      foundSkill = skillsFilter.length == 0,
+      foundYear = yearFilter.length == 0;
     checkedTags.forEach(function (checkedTag) {
       if ($(item).attr("tags").includes(checkedTag)) foundTag = true;
+    });
+    checkedSkills.forEach(function (checkedSkill) {
+      if ($(item).attr("skills").includes(checkedSkill)) foundSkill = true;
     });
     checkedYears.forEach(function (checkedYear) {
       if ($(item).attr("years").includes(checkedYear)) foundYear = true;
     });
 
     // show/hide items
-    var shouldBeVisible = foundTag && foundYear;
+    var shouldBeVisible = foundTag && foundSkill && foundYear;
     if (($(item).is(":visible") && !shouldBeVisible) || (!$(item).is(":visible") && shouldBeVisible)) {
       $(item).slideToggle({ duration: 700 });
     }
@@ -118,12 +165,14 @@ function generateCard(project) {
   }
 
   div_desc = "<div class='description'>" + project.description + "</div>";
-  button_text = project.tags.includes("Game") ? "Play" : "See";
-  button = project.link ? "<a class='button rounded play' href='" + project.link + "'>" + button_text + "</a>" : "";
+  button_text = project.tags ? (project.tags.includes("Game") ? "Play" : "See") : "";
+  button = button_text && project.link ? "<a class='button rounded play' href='" + project.link + "'>" + button_text + "</a>" : "";
   image = project.image ? "<img src='" + baseurl + project.image + "'>" : "";
   return (
     "<div class='card' tags='" +
-    project.tags.join(" ") +
+    project.tags?.join(" ") +
+    "' skills='" +
+    project.skills?.join(" ") +
     "' years='" +
     project.year +
     "'>" +
@@ -151,7 +200,7 @@ $(document).ready(function () {
     stringsMap = new Map(Object.entries(data.strings));
 
     // add div for intro
-    var introDiv = $("<p/>", { class: "", html: stringsMap.get("Intro") });
+    var introDiv = $("<p/>", { html: stringsMap.get("Intro") });
     introDiv.appendTo("#projects-container");
 
     // add div for filters
@@ -171,18 +220,22 @@ $(document).ready(function () {
 
     // create filters
     var tags = new Set();
+    var skills = new Set();
     for (let i = 0; i < projects.length; i++) {
-      projects[i].tags.forEach((tag) => tags.add(tag));
+      projects[i].tags?.forEach((tag) => tags.add(tag));
+      projects[i].skills?.forEach((skill) => skills.add(skill));
     }
 
     if (language == "en") {
       createTagsFilter(tags);
+      createSkillsFilter(skills);
       createYearsFilter();
     } else {
       // for non-English, first load scripts with translations
       let scriptUrl = baseurl + "root/lib/jQuery-UI-Multiple-Select-Widget/i18n/jquery.multiselect." + language + ".js";
       $.getScript(scriptUrl, function () {
         createTagsFilter(tags);
+        createSkillsFilter(skills);
         createYearsFilter();
       });
     }

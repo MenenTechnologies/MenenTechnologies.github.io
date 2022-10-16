@@ -13,12 +13,15 @@ msgid ""
 "the current active website, displays them in a tree view and allows to "
 "remove any or all of them."
 msgstr ""
+"Extensión de Google Chrome que elimina memoria caché. Recoge todas las "
+"cookies almacenadas por el sitio web activo en ese momento, las muestra en "
+"una vista de árbol y permite eliminar alguna o todas ellas."
 
 #. /projects[0]/title
 #: File: projects.json
 #: ID: f36afcb13160696167ce2cc5c583d855
 msgid "Cookie Devourer"
-msgstr ""
+msgstr "Devorador de cookies"
 
 #. /projects[1]/description
 #: File: projects.json
@@ -43,12 +46,14 @@ msgid ""
 "Website that highlights my experience and personal projects. It is "
 "localized to several languages."
 msgstr ""
+"Sitio web que destaca mi experiencia y mis proyectos personales. Está "
+"localizada a varios idiomas."
 
 #. /projects[2]/title
 #: File: projects.json
 #: ID: d27b7c60d013c063179913503bdf770c
 msgid "This website"
-msgstr ""
+msgstr "Esta página web"
 
 #. /projects[3]/description
 #: File: projects.json
@@ -82,12 +87,16 @@ msgstr "Asteroides"
 
 #. /projects[5]/description
 #: File: projects.json
-#: ID: d926a824bed0c51355154d26d5800bd1
+#: ID: d6f6afadf0ad5f7e9516af7d0aa4f469
 msgid ""
-"Game for the Ludum Dare 44 game jam, developed in group with some folks "
-"from the Baltimore Indie Game Developers Group. I did most of the "
-"programming and set up the scenes in Unity."
+"Game for the 44th edition of the Ludum Dare game jam, developed in group "
+"with some folks from the Baltimore Indie Game Developers Group. I did most "
+"of the programming and set up the scenes in Unity."
 msgstr ""
+"Juego para la 44ª edición de la competición de videojuegos conocida como "
+"Ludum Dare, desarrollado en grupo con algunas personas del grupo de "
+"desarrolladores de videojuegos indie de Baltimore. Yo realicé la mayor "
+"parte de la programación y monté las escenas en Unity."
 
 #. /projects[5]/title
 #: File: projects.json
@@ -116,24 +125,29 @@ msgid ""
 "engineer. This is a list of projects that I have created in the last years "
 "during my free time to practice those skills."
 msgstr ""
+"Me gusta seguir mejorando y aprendiendo nuevas habilidades. Busco "
+"habilidades que sean divertidas, útiles y complementarias a mi trabajo como "
+"ingeniero de software front-end. Esta es una lista de proyectos que he "
+"creado en los últimos años durante mi tiempo libre para practicar esas "
+"habilidades."
 
 #. /strings/Play
 #: File: projects.json
 #: ID: 2bf8a8f42f401914c9296852b1a87106
 msgid "Play"
-msgstr ""
+msgstr "Jugar"
 
 #. /strings/See
 #: File: projects.json
 #: ID: b1f54236f155e6aa633d40c353d6fe38
 msgid "See"
-msgstr ""
+msgstr "Ver"
 
 #. /strings/Skills:
 #: File: projects.json
 #: ID: e27d914c1091dabee45352c452f27637
 msgid "Skills:"
-msgstr ""
+msgstr "Habilidades:"
 
 #. /strings/Software
 #: File: projects.json

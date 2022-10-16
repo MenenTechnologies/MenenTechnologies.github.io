@@ -50,7 +50,7 @@
       "tags": ["Software", "Game"],
       "skills": ["Unity", "C#"],
       "year": 2019,
-      "description": "Game for the Ludum Dare 44 game jam, developed in group with some folks from the Baltimore Indie Game Developers Group. I did most of the programming and set up the scenes in Unity.",
+      "description": "Game for the 44th edition of the Ludum Dare game jam, developed in group with some folks from the Baltimore Indie Game Developers Group. I did most of the programming and set up the scenes in Unity.",
       "link": "https://ldjam.com/events/ludum-dare/44/loose-change",
       "image": "root/images/projects/LooseChange.png"
     }

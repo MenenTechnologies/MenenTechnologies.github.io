@@ -1,7 +1,7 @@
 {
    "projects" : [
       {
-         "description" : "Cache remover extension for Google Chrome. It gathers all cookies stored by the current active website, displays them in a tree view and allows to remove any or all of them.",
+         "description" : "Extensión de Google Chrome que elimina memoria caché. Recoge todas las cookies almacenadas por el sitio web activo en ese momento, las muestra en una vista de árbol y permite eliminar alguna o todas ellas.",
          "image" : "root\/images\/projects\/CacheRemover.png",
          "link" : "https:\/\/github.com\/MenenDevs\/CacheRemover",
          "skills" : [
@@ -14,7 +14,7 @@
             "Software",
             "Web"
          ],
-         "title" : "Cookie Devourer",
+         "title" : "Devorador de cookies",
          "year" : 2022
       },
       {
@@ -35,7 +35,7 @@
          "year" : 2022
       },
       {
-         "description" : "Website that highlights my experience and personal projects. It is localized to several languages.",
+         "description" : "Sitio web que destaca mi experiencia y mis proyectos personales. Está localizada a varios idiomas.",
          "image" : "root\/images\/projects\/PortfolioWebsite.png",
          "link" : "https:\/\/menendevs.com\/",
          "skills" : [
@@ -48,7 +48,7 @@
             "Software",
             "Web"
          ],
-         "title" : "This website",
+         "title" : "Esta página web",
          "year" : "2022"
       },
       {
@@ -84,7 +84,7 @@
          "year" : 2020
       },
       {
-         "description" : "Game for the Ludum Dare 44 game jam, developed in group with some folks from the Baltimore Indie Game Developers Group. I did most of the programming and set up the scenes in Unity.",
+         "description" : "Juego para la 44ª edición de la competición de videojuegos conocida como Ludum Dare, desarrollado en grupo con algunas personas del grupo de desarrolladores de videojuegos indie de Baltimore. Yo realicé la mayor parte de la programación y monté las escenas en Unity.",
          "image" : "root\/images\/projects\/LooseChange.png",
          "link" : "https:\/\/ldjam.com\/events\/ludum-dare\/44\/loose-change",
          "skills" : [
@@ -102,10 +102,10 @@
    "strings" : {
       "Game" : "Juego",
       "InDevelopment" : "En desarrollo",
-      "Intro" : "I like to keep improving and learning new skills. I look for skills that are fun, useful and complementary to my job as a front-end software engineer. This is a list of projects that I have created in the last years during my free time to practice those skills.",
-      "Play" : "Play",
-      "See" : "See",
-      "Skills:" : "Skills:",
+      "Intro" : "Me gusta seguir mejorando y aprendiendo nuevas habilidades. Busco habilidades que sean divertidas, útiles y complementarias a mi trabajo como ingeniero de software front-end. Esta es una lista de proyectos que he creado en los últimos años durante mi tiempo libre para practicar esas habilidades.",
+      "Play" : "Jugar",
+      "See" : "Ver",
+      "Skills:" : "Habilidades:",
       "Software" : "Software",
       "Type:" : "Tipo:",
       "Web" : "Web",

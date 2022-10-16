@@ -1,0 +1,17 @@
+msgid ""
+msgstr ""
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: zh_CN\n"
+"Generated-By: Serge 1.4\n"
+
+#: File: navbar.html
+#: ID: 222f970e9101b7c707fbe033572270cb
+msgid "HOME"
+msgstr "家"
+
+#: File: navbar.html
+#: ID: 7df8529373389c717d441c4f17949bc2
+msgid "PROJECTS"
+msgstr "项目"
+

@@ -234,7 +234,8 @@ $(document).ready(function () {
       createYearsFilter();
     } else {
       // for non-English, first load scripts with translations
-      let scriptUrl = baseurl + "root/lib/jQuery-UI-Multiple-Select-Widget/i18n/jquery.multiselect." + language + ".js";
+      const special_lang_jQuearyLib = new Map([["zh", "zh-cn"]]);
+      let scriptUrl = baseurl + "root/lib/jQuery-UI-Multiple-Select-Widget/i18n/jquery.multiselect." + (special_lang_jQuearyLib.get(language) || language) + ".js";
       $.getScript(scriptUrl, function () {
         createTagsFilter(tags);
         createSkillsFilter(skills);

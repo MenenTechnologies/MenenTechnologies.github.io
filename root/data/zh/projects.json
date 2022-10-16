@@ -1,0 +1,114 @@
+{
+   "projects" : [
+      {
+         "description" : "谷歌浏览器的缓存移除扩展。它收集当前活动网站存储的所有 cookie，将它们显示在树形视图中，并允许删除其中的任何或全部。",
+         "image" : "root\/images\/projects\/CacheRemover.png",
+         "link" : "https:\/\/github.com\/MenenDevs\/CacheRemover",
+         "skills" : [
+            "HTML",
+            "CSS",
+            "Javascript",
+            "jQuery"
+         ],
+         "tags" : [
+            "Software",
+            "Web"
+         ],
+         "title" : "饼干吞噬者",
+         "year" : 2022
+      },
+      {
+         "description" : "第一人称游戏，您需要与牛头怪战斗并找到迷宫的出口。",
+         "image" : "",
+         "link" : "https:\/\/menendevs.com\/Maze\/Build_20200228",
+         "skills" : [
+            "Unity",
+            "C#",
+            "Blender"
+         ],
+         "tags" : [
+            "Software",
+            "Game",
+            "InDevelopment"
+         ],
+         "title" : "牛头怪的迷宫",
+         "year" : 2022
+      },
+      {
+         "description" : "突出我的经验和个人项目的网站。我建立了一个自动化系统，将其本地化为多种语言。",
+         "image" : "root\/images\/projects\/PortfolioWebsite.png",
+         "link" : "https:\/\/menendevs.com\/",
+         "skills" : [
+            "HTML",
+            "CSS",
+            "Javascript",
+            "jQuery"
+         ],
+         "tags" : [
+            "Software",
+            "Web"
+         ],
+         "title" : "这个网站",
+         "year" : "2022"
+      },
+      {
+         "description" : "LEGO Ideas Game Jam 的轻松游戏。种植不同类型的作物并收获它们以赚钱。",
+         "image" : "root\/images\/projects\/LegoFarm.jpg",
+         "link" : "https:\/\/ideas.lego.com\/challenges\/6811cf30-f944-4dfa-8714-9b38be6fbb52\/application\/ccc48507-85d4-403e-8fcb-a9a2ec69c19b",
+         "skills" : [
+            "Unity",
+            "C#"
+         ],
+         "tags" : [
+            "Software",
+            "Game"
+         ],
+         "title" : "乐高农场",
+         "year" : 2021
+      },
+      {
+         "description" : "我制作的第一款游戏，用于练习我在 Unity 中获得的新技能。",
+         "image" : "root\/images\/projects\/Asteroids.png",
+         "link" : "https:\/\/menendevs.com\/Asteroids\/Build_20210214\/",
+         "skills" : [
+            "Unity",
+            "C#",
+            "Blender",
+            "Photoshop"
+         ],
+         "tags" : [
+            "Software",
+            "Game"
+         ],
+         "title" : "小行星",
+         "year" : 2020
+      },
+      {
+         "description" : "第 44 版 Ludum Dare 游戏果酱的游戏，与巴尔的摩独立游戏开发者集团的一些人一起开发。我完成了大部分编程并在 Unity 中设置了场景。",
+         "image" : "root\/images\/projects\/LooseChange.png",
+         "link" : "https:\/\/ldjam.com\/events\/ludum-dare\/44\/loose-change",
+         "skills" : [
+            "Unity",
+            "C#"
+         ],
+         "tags" : [
+            "Software",
+            "Game"
+         ],
+         "title" : "Ludum Dare 44：零钱",
+         "year" : 2019
+      }
+   ],
+   "strings" : {
+      "Game" : "游戏",
+      "InDevelopment" : "开发中",
+      "Intro" : "我喜欢不断改进和学习新技能。作为前端软件工程师，我寻找有趣、有用且与我的工作相辅相成的技能。这是我过去几年在空闲时间练习这些技能时创建的项目列表。",
+      "Play" : "玩",
+      "See" : "看",
+      "Skills:" : "技能：",
+      "Software" : "软件",
+      "Type:" : "类型：",
+      "Web" : "网络",
+      "Year:" : "年："
+   }
+}

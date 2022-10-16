@@ -7,7 +7,7 @@ $(document).ready(function(){
     var fullurl =  window.location.href;
 
     // find out current language
-    const languages_available = new Set(["en", "es"]);
+    const languages_available = new Set(["en", "es", "zh"]);
     var lang = path.substring(1, path.substring(1).search("/") + 1);
     lang = languages_available.has(lang) ? lang : "en";
 

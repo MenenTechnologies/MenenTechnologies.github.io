@@ -1,0 +1,154 @@
+msgid ""
+msgstr ""
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: zh_HANS\n"
+"Generated-By: Serge 1.4\n"
+
+#. /projects[0]/description
+#: File: projects.json
+#: ID: e6ebb0774a3d835a2d0a427111b79be8
+msgid ""
+"Cache remover extension for Google Chrome. It gathers all cookies stored by "
+"the current active website, displays them in a tree view and allows to "
+"remove any or all of them."
+msgstr "谷歌浏览器的缓存移除扩展。它收集当前活动网站存储的所有 cookie，将它们显示在树形视图中，并允许删除其中的任何或全部。"
+
+#. /projects[0]/title
+#: File: projects.json
+#: ID: f36afcb13160696167ce2cc5c583d855
+msgid "Cookie Devourer"
+msgstr "饼干吞噬者"
+
+#. /projects[1]/description
+#: File: projects.json
+#: ID: efd8c9c84126b86b905d2d2c2639d42a
+msgid ""
+"Game in first person in which you need to fight the minotaur and find the "
+"exit of the maze."
+msgstr "第一人称游戏，您需要与牛头怪战斗并找到迷宫的出口。"
+
+#. /projects[1]/title
+#: File: projects.json
+#: ID: afb14c54be47ef80e7ba8c25c7b02b29
+msgid "Minotaur's Maze"
+msgstr "牛头怪的迷宫"
+
+#. /projects[2]/description
+#: File: projects.json
+#: ID: d5c695316647cbd0a1094790948710ae
+msgid ""
+"Website that highlights my experience and personal projects. I set up an "
+"automated system to localize it to several languages."
+msgstr "突出我的经验和个人项目的网站。我建立了一个自动化系统，将其本地化为多种语言。"
+
+#. /projects[2]/title
+#: File: projects.json
+#: ID: d27b7c60d013c063179913503bdf770c
+msgid "This website"
+msgstr "这个网站"
+
+#. /projects[3]/description
+#: File: projects.json
+#: ID: 94d3c1cfe845b5ef5f21a90aff08311e
+msgid ""
+"Relaxing game for the LEGO Ideas Game Jam. Grow different types of crops "
+"and harvest them to earn money."
+msgstr "LEGO Ideas Game Jam 的轻松游戏。种植不同类型的作物并收获它们以赚钱。"
+
+#. /projects[3]/title
+#: File: projects.json
+#: ID: 40ceb777ce50f70d8153f3810b768164
+msgid "LEGO Farm"
+msgstr "乐高农场"
+
+#. /projects[4]/description
+#: File: projects.json
+#: ID: d288f489c38cbaf9e6709341abc89078
+msgid "First game I made to practice my new acquired skills in Unity."
+msgstr "我制作的第一款游戏，用于练习我在 Unity 中获得的新技能。"
+
+#. /projects[4]/title
+#: File: projects.json
+#: ID: b032a9f97b2fd429c7346b47c990c2af
+msgid "Asteroids"
+msgstr "小行星"
+
+#. /projects[5]/description
+#: File: projects.json
+#: ID: d6f6afadf0ad5f7e9516af7d0aa4f469
+msgid ""
+"Game for the 44th edition of the Ludum Dare game jam, developed in group "
+"with some folks from the Baltimore Indie Game Developers Group. I did most "
+"of the programming and set up the scenes in Unity."
+msgstr "第 44 版 Ludum Dare 游戏果酱的游戏，与巴尔的摩独立游戏开发者集团的一些人一起开发。我完成了大部分编程并在 Unity 中设置了场景。"
+
+#. /projects[5]/title
+#: File: projects.json
+#: ID: 826106862e83f313a90fbce04922d03b
+msgid "Ludum Dare 44: Loose Change"
+msgstr "Ludum Dare 44：零钱"
+
+#. /strings/Game
+#: File: projects.json
+#: ID: dff66d68d747d86e8b55a3f5dd8621d1
+msgid "Game"
+msgstr "游戏"
+
+#. /strings/InDevelopment
+#: File: projects.json
+#: ID: c9bc0695550062cb1debecbde55414e1
+msgid "In Development"
+msgstr "开发中"
+
+#. /strings/Intro
+#: File: projects.json
+#: ID: 86065984427067a7c45cbca91a29a5dc
+msgid ""
+"I like to keep improving and learning new skills. I look for skills that "
+"are fun, useful and complementary to my job as a front-end software "
+"engineer. This is a list of projects that I have created in the last years "
+"during my free time to practice those skills."
+msgstr "我喜欢不断改进和学习新技能。作为前端软件工程师，我寻找有趣、有用且与我的工作相辅相成的技能。这是我过去几年在空闲时间练习这些技能时创建的项目列表。"
+
+#. /strings/Play
+#: File: projects.json
+#: ID: 2bf8a8f42f401914c9296852b1a87106
+msgid "Play"
+msgstr "玩"
+
+#. /strings/See
+#: File: projects.json
+#: ID: b1f54236f155e6aa633d40c353d6fe38
+msgid "See"
+msgstr "看"
+
+#. /strings/Skills:
+#: File: projects.json
+#: ID: e27d914c1091dabee45352c452f27637
+msgid "Skills:"
+msgstr "技能："
+
+#. /strings/Software
+#: File: projects.json
+#: ID: 8bc4a2d5c8414f94716468c5e31da4af
+msgid "Software"
+msgstr "软件"
+
+#. /strings/Type:
+#: File: projects.json
+#: ID: 9bc1396df7cb64691de4750331ec4f5f
+msgid "Type:"
+msgstr "类型："
+
+#. /strings/Web
+#: File: projects.json
+#: ID: 6c2722f05d9c3e18f4ddc160906f6c67
+msgid "Web"
+msgstr "网络"
+
+#. /strings/Year:
+#: File: projects.json
+#: ID: 1bd5dacd0879b85b57040854da8e089e
+msgid "Year:"
+msgstr "年："
